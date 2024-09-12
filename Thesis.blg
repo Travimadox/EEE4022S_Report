@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: 2_Preface/0_Abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
+A level-1 auxiliary file: 2_Preface/1_Acknowledgements.aux
+Reallocating 'name_of_file' (item size: 1) to 38 items.
+A level-1 auxiliary file: 2_Preface/2_PlagiarismDeclaration.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: 1_Glossaries/Glossary.aux
+Reallocating 'name_of_file' (item size: 1) to 51 items.
+A level-1 auxiliary file: 3_Chapters/1_Chapter_Introduction/Introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 59 items.
+A level-1 auxiliary file: 3_Chapters/2_Chapter_LiteratureReview/LiteratureReview.aux
+Reallocating 'name_of_file' (item size: 1) to 49 items.
+A level-1 auxiliary file: 3_Chapters/3_Chapter_Methodology/Methodology.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
+A level-1 auxiliary file: 3_Chapters/4_Chapter_Design/Design.aux
+Reallocating 'name_of_file' (item size: 1) to 41 items.
+A level-1 auxiliary file: 3_Chapters/5_Chapter_Results/Results.aux
+Reallocating 'name_of_file' (item size: 1) to 49 items.
+A level-1 auxiliary file: 3_Chapters/6_Chapter_Conclusions/Conclusions.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: 4_References/References.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in umadevi_improved_2011
+
+Done.
+You've used 77 entries,
+            4087 wiz_defined-function locations,
+            1345 strings with 28058 characters,
+and the built_in function-call counts, 70561 in all, are:
+= -- 5971
+> -- 1712
+< -- 649
++ -- 945
+- -- 297
+* -- 3823
+:= -- 10615
+add.period$ -- 163
+call.type$ -- 77
+change.case$ -- 108
+chr.to.int$ -- 1446
+cite$ -- 78
+duplicate$ -- 4843
+empty$ -- 5083
+format.name$ -- 354
+if$ -- 16348
+int.to.chr$ -- 0
+int.to.str$ -- 77
+missing$ -- 840
+newline$ -- 356
+num.names$ -- 86
+pop$ -- 1719
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 5340
+stack$ -- 0
+substring$ -- 3590
+swap$ -- 4432
+text.length$ -- 167
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 77
+warning$ -- 1
+while$ -- 303
+width$ -- 79
+write$ -- 974
+(There was 1 warning)

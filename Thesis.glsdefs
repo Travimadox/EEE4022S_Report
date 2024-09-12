@@ -1,0 +1,2184 @@
+\glsdefs@newdocentry{goldenhour}%
+{%
+name={golden hour},%
+sort={golden hour},%
+type={main},%
+first={golden hour},%
+firstplural={golden hours},%
+text={golden hour},%
+plural={golden hours},%
+description={term often used in trauma or emergency care to suggest that an injured or sick person must receive definitive treatment within the first 60 minutes from the time of injury or appearance of symptoms},%
+descriptionplural={term often used in trauma or emergency care to suggest that an injured or sick person must receive definitive treatment within the first 60 minutes from the time of injury or appearance of symptoms},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{diction}%
+{%
+name={diction},%
+sort={diction},%
+type={main},%
+first={diction},%
+firstplural={dictions},%
+text={diction},%
+plural={dictions},%
+description={the choice and use of words and phrases in speech or writing},%
+descriptionplural={the choice and use of words and phrases in speech or writing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lexicon}%
+{%
+name={lexicon},%
+sort={lexicon},%
+type={main},%
+first={lexicon},%
+firstplural={lexicons},%
+text={lexicon},%
+plural={lexicons},%
+description={the vocabulary of a person, language, or branch of knowledge},%
+descriptionplural={the vocabulary of a person, language, or branch of knowledge},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{prose}%
+{%
+name={prose},%
+sort={prose},%
+type={main},%
+first={prose},%
+firstplural={proses},%
+text={prose},%
+plural={proses},%
+description={written or spoken language in its ordinary form, without metrical structure},%
+descriptionplural={written or spoken language in its ordinary form, without metrical structure},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ADC}%
+{%
+name={ADC},%
+sort={ADC},%
+type={main},%
+first={ADC},%
+firstplural={ADCs},%
+text={ADC},%
+plural={ADCs},%
+description={Analogue-to-Digital Converter},%
+descriptionplural={Analogue-to-Digital Converter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Anscombe transform}%
+{%
+name={Anscombe transform},%
+sort={Anscombe transform},%
+type={main},%
+first={Anscombe transform},%
+firstplural={Anscombe transforms},%
+text={Anscombe transform},%
+plural={Anscombe transforms},%
+description={A variance-stabilizing transformation used to approximate the distribution of Poisson-distributed data by a normal distribution, often applied in image processing and statistics.},%
+descriptionplural={A variance-stabilizing transformation used to approximate the distribution of Poisson-distributed data by a normal distribution, often applied in image processing and statistics.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Staircase effect}%
+{%
+name={Staircase effect},%
+sort={Staircase effect},%
+type={main},%
+first={Staircase effect},%
+firstplural={Staircase effects},%
+text={Staircase effect},%
+plural={Staircase effects},%
+description={An artifact in digital imaging where smooth gradations of intensity are represented by abrupt steps or bands, rather than a continuous transition. This effect is commonly observed in images with low bit depth or when using inadequate interpolation methods.},%
+descriptionplural={An artifact in digital imaging where smooth gradations of intensity are represented by abrupt steps or bands, rather than a continuous transition. This effect is commonly observed in images with low bit depth or when using inadequate interpolation methods.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Yaroslavsky filter}%
+{%
+name={Yaroslavsky filter},%
+sort={Yaroslavsky filter},%
+type={main},%
+first={Yaroslavsky filter},%
+firstplural={Yaroslavsky filters},%
+text={Yaroslavsky filter},%
+plural={Yaroslavsky filters},%
+description={A type of neighbourhood filter used in image processing for denoising images. It averages pixel values in a neighborhood but only includes those with similar intensity to the central pixel, effectively reducing noise while preserving edges. This method is computationally efficient and commonly used in fields like medical imaging and photography.},%
+descriptionplural={A type of neighbourhood filter used in image processing for denoising images. It averages pixel values in a neighborhood but only includes those with similar intensity to the central pixel, effectively reducing noise while preserving edges. This method is computationally efficient and commonly used in fields like medical imaging and photography.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{U-Net}%
+{%
+name={U-Net},%
+sort={Unet},%
+type={main},%
+first={U-Net},%
+firstplural={U-Nets},%
+text={U-Net},%
+plural={U-Nets},%
+description={A type of convolutional neural network architecture primarily used for image segmentation tasks. It consists of an encoder-decoder structure with skip connections, enabling precise localisation and efficient learning from limited data. U-Net is widely used in medical image analysis due to its ability to produce accurate segmentation even with small training datasets.},%
+descriptionplural={A type of convolutional neural network architecture primarily used for image segmentation tasks. It consists of an encoder-decoder structure with skip connections, enabling precise localisation and efficient learning from limited data. U-Net is widely used in medical image analysis due to its ability to produce accurate segmentation even with small training datasets.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{FBPtransNet}%
+{%
+name={FBPTransNet},%
+sort={FBPTransNet},%
+type={main},%
+first={FBPTransNet},%
+firstplural={FBPTransNets},%
+text={FBPTransNet},%
+plural={FBPTransNets},%
+description={A neural network architecture that enhances image quality in CT scans by replacing the maximum pooling layers of FBPconvNet with Transformer modules. FBPTransNet features dual inlets and outlets to simultaneously process high and low energy CT images, and employs a multi-head attention mechanism to effectively model noise maps and recover fine texture details in the denoised images.},%
+descriptionplural={A neural network architecture that enhances image quality in CT scans by replacing the maximum pooling layers of FBPconvNet with Transformer modules. FBPTransNet features dual inlets and outlets to simultaneously process high and low energy CT images, and employs a multi-head attention mechanism to effectively model noise maps and recover fine texture details in the denoised images.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{FBPconvNet}%
+{%
+name={FBPconvNet},%
+sort={FBPconvNet},%
+type={main},%
+first={FBPconvNet},%
+firstplural={FBPconvNets},%
+text={FBPconvNet},%
+plural={FBPconvNets},%
+description={A convolutional neural network architecture designed for improving image reconstruction in CT scans. It builds upon the traditional Filtered Back Projection (FBP) method by introducing convolutional layers that enhance image quality, particularly in low-dose CT images. FBPconvNet focuses on reducing artifacts and noise while preserving essential image details.},%
+descriptionplural={A convolutional neural network architecture designed for improving image reconstruction in CT scans. It builds upon the traditional Filtered Back Projection (FBP) method by introducing convolutional layers that enhance image quality, particularly in low-dose CT images. FBPconvNet focuses on reducing artifacts and noise while preserving essential image details.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lol}%
+{%
+name={\acronymfont {\glsentryshort {lol}}},%
+sort={LOL!},%
+type={acronym},%
+first={LOL!},%
+firstplural={LOL!s},%
+text={LOL!},%
+plural={LOL!s},%
+description={Laugh Out Loud},%
+descriptionplural={Laugh Out Loud},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Laugh Out Loud},%
+longplural={Laugh Out Louds},%
+short={LOL!},%
+shortplural={LOL!s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{CCD}%
+{%
+name={\acronymfont {\glsentryshort {CCD}}},%
+sort={CCD},%
+type={acronym},%
+first={CCD},%
+firstplural={CCDs},%
+text={CCD},%
+plural={CCDs},%
+description={Charge Coupled Detector},%
+descriptionplural={Charge Coupled Detector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Charge Coupled Detector},%
+longplural={Charge Coupled Detectors},%
+short={CCD},%
+shortplural={CCDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PCD}%
+{%
+name={\acronymfont {\glsentryshort {PCD}}},%
+sort={PCD},%
+type={acronym},%
+first={PCD},%
+firstplural={PCDs},%
+text={PCD},%
+plural={PCDs},%
+description={Photon Counting Detector},%
+descriptionplural={Photon Counting Detector},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Photon Counting Detector},%
+longplural={Photon Counting Detectors},%
+short={PCD},%
+shortplural={PCDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{CT}%
+{%
+name={\acronymfont {\glsentryshort {CT}}},%
+sort={CT},%
+type={acronym},%
+first={CT},%
+firstplural={CTs},%
+text={CT},%
+plural={CTs},%
+description={Computed Tomography},%
+descriptionplural={Computed Tomography},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Computed Tomography},%
+longplural={Computed Tomographys},%
+short={CT},%
+shortplural={CTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{DNA}%
+{%
+name={\acronymfont {\glsentryshort {DNA}}},%
+sort={DNA},%
+type={acronym},%
+first={DNA},%
+firstplural={DNAs},%
+text={DNA},%
+plural={DNAs},%
+description={Deoxyribonucleic Acid},%
+descriptionplural={Deoxyribonucleic Acid},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Deoxyribonucleic Acid},%
+longplural={Deoxyribonucleic Acids},%
+short={DNA},%
+shortplural={DNAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{UV}%
+{%
+name={\acronymfont {\glsentryshort {UV}}},%
+sort={UV},%
+type={acronym},%
+first={UV},%
+firstplural={UVs},%
+text={UV},%
+plural={UVs},%
+description={Ultraviolet rays},%
+descriptionplural={Ultraviolet rays},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Ultraviolet rays},%
+longplural={Ultraviolet rayss},%
+short={UV},%
+shortplural={UVs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{OD}%
+{%
+name={\acronymfont {\glsentryshort {OD}}},%
+sort={OD},%
+type={acronym},%
+first={OD},%
+firstplural={ODs},%
+text={OD},%
+plural={ODs},%
+description={Optical Density},%
+descriptionplural={Optical Density},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Optical Density},%
+longplural={Optical Densitys},%
+short={OD},%
+shortplural={ODs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{CMOS}%
+{%
+name={\acronymfont {\glsentryshort {CMOS}}},%
+sort={CMOS},%
+type={acronym},%
+first={CMOS},%
+firstplural={CMOSs},%
+text={CMOS},%
+plural={CMOSs},%
+description={complementary metal-oxide semiconductor},%
+descriptionplural={complementary metal-oxide semiconductor},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={complementary metal-oxide semiconductor},%
+longplural={complementary metal-oxide semiconductors},%
+short={CMOS},%
+shortplural={CMOSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{A/D}%
+{%
+name={\acronymfont {\glsentryshort {A/D}}},%
+sort={A/D},%
+type={acronym},%
+first={A/D},%
+firstplural={A/Ds},%
+text={A/D},%
+plural={A/Ds},%
+description={analog-to-digital converter},%
+descriptionplural={analog-to-digital converter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={analog-to-digital converter},%
+longplural={analog-to-digital converters},%
+short={A/D},%
+shortplural={A/Ds},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PMT}%
+{%
+name={\acronymfont {\glsentryshort {PMT}}},%
+sort={PMT},%
+type={acronym},%
+first={PMT},%
+firstplural={PMTs},%
+text={PMT},%
+plural={PMTs},%
+description={Photomultiplier detectors},%
+descriptionplural={Photomultiplier detectors},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Photomultiplier detectors},%
+longplural={Photomultiplier detectorss},%
+short={PMT},%
+shortplural={PMTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ASP}%
+{%
+name={\acronymfont {\glsentryshort {ASP}}},%
+sort={ASP},%
+type={acronym},%
+first={ASP},%
+firstplural={ASPs},%
+text={ASP},%
+plural={ASPs},%
+description={Arm Scanning and Positioning Assembly},%
+descriptionplural={Arm Scanning and Positioning Assembly},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Arm Scanning and Positioning Assembly},%
+longplural={Arm Scanning and Positioning Assemblys},%
+short={ASP},%
+shortplural={ASPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{BFU}%
+{%
+name={\acronymfont {\glsentryshort {BFU}}},%
+sort={BFU},%
+type={acronym},%
+first={BFU},%
+firstplural={BFUs},%
+text={BFU},%
+plural={BFUs},%
+description={Base Frame Unit},%
+descriptionplural={Base Frame Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Base Frame Unit},%
+longplural={Base Frame Units},%
+short={BFU},%
+shortplural={BFUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SH}%
+{%
+name={\acronymfont {\glsentryshort {SH}}},%
+sort={SH},%
+type={acronym},%
+first={SH},%
+firstplural={SHs},%
+text={SH},%
+plural={SHs},%
+description={Support Housing},%
+descriptionplural={Support Housing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Support Housing},%
+longplural={Support Housings},%
+short={SH},%
+shortplural={SHs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{TDI}%
+{%
+name={\acronymfont {\glsentryshort {TDI}}},%
+sort={TDI},%
+type={acronym},%
+first={TDI},%
+firstplural={TDIs},%
+text={TDI},%
+plural={TDIs},%
+description={Time Delay and Integration},%
+descriptionplural={Time Delay and Integration},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Time Delay and Integration},%
+longplural={Time Delay and Integrations},%
+short={TDI},%
+shortplural={TDIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{BMI}%
+{%
+name={\acronymfont {\glsentryshort {BMI}}},%
+sort={BMI},%
+type={acronym},%
+first={BMI},%
+firstplural={BMIs},%
+text={BMI},%
+plural={BMIs},%
+description={Body Mass Index},%
+descriptionplural={Body Mass Index},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Body Mass Index},%
+longplural={Body Mass Indexs},%
+short={BMI},%
+shortplural={BMIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SNR}%
+{%
+name={\acronymfont {\glsentryshort {SNR}}},%
+sort={SNR},%
+type={acronym},%
+first={SNR},%
+firstplural={SNRs},%
+text={SNR},%
+plural={SNRs},%
+description={Signal-to-Noise Ratio},%
+descriptionplural={Signal-to-Noise Ratio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Signal-to-Noise Ratio},%
+longplural={Signal-to-Noise Ratios},%
+short={SNR},%
+shortplural={SNRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PSNR}%
+{%
+name={\acronymfont {\glsentryshort {PSNR}}},%
+sort={PSNR},%
+type={acronym},%
+first={PSNR},%
+firstplural={PSNRs},%
+text={PSNR},%
+plural={PSNRs},%
+description={Peak Signal-to-Noise Ratio},%
+descriptionplural={Peak Signal-to-Noise Ratio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Peak Signal-to-Noise Ratio},%
+longplural={Peak Signal-to-Noise Ratios},%
+short={PSNR},%
+shortplural={PSNRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{AP}%
+{%
+name={\acronymfont {\glsentryshort {AP}}},%
+sort={AP},%
+type={acronym},%
+first={AP},%
+firstplural={APs},%
+text={AP},%
+plural={APs},%
+description={anteroposterior},%
+descriptionplural={anteroposterior},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={anteroposterior},%
+longplural={anteroposteriors},%
+short={AP},%
+shortplural={APs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{FDA}%
+{%
+name={\acronymfont {\glsentryshort {FDA}}},%
+sort={FDA},%
+type={acronym},%
+first={FDA},%
+firstplural={FDAs},%
+text={FDA},%
+plural={FDAs},%
+description={The United States Food and Drug Administration Agency},%
+descriptionplural={The United States Food and Drug Administration Agency},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={The United States Food and Drug Administration Agency},%
+longplural={The United States Food and Drug Administration Agencys},%
+short={FDA},%
+shortplural={FDAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ASIC}%
+{%
+name={\acronymfont {\glsentryshort {ASIC}}},%
+sort={ASIC},%
+type={acronym},%
+first={ASIC},%
+firstplural={ASICs},%
+text={ASIC},%
+plural={ASICs},%
+description={application-specific integrated circuits},%
+descriptionplural={application-specific integrated circuits},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={application-specific integrated circuits},%
+longplural={application-specific integrated circuitss},%
+short={ASIC},%
+shortplural={ASICs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{AWGN}%
+{%
+name={\acronymfont {\glsentryshort {AWGN}}},%
+sort={AWGN},%
+type={acronym},%
+first={AWGN},%
+firstplural={AWGNs},%
+text={AWGN},%
+plural={AWGNs},%
+description={Additive White Gaussian Noise},%
+descriptionplural={Additive White Gaussian Noise},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Additive White Gaussian Noise},%
+longplural={Additive White Gaussian Noises},%
+short={AWGN},%
+shortplural={AWGNs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{VST}%
+{%
+name={\acronymfont {\glsentryshort {VST}}},%
+sort={VST},%
+type={acronym},%
+first={VST},%
+firstplural={VSTs},%
+text={VST},%
+plural={VSTs},%
+description={Variance Stabilising Transform},%
+descriptionplural={Variance Stabilising Transform},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Variance Stabilising Transform},%
+longplural={Variance Stabilising Transforms},%
+short={VST},%
+shortplural={VSTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ADF}%
+{%
+name={\acronymfont {\glsentryshort {ADF}}},%
+sort={ADF},%
+type={acronym},%
+first={ADF},%
+firstplural={ADFs},%
+text={ADF},%
+plural={ADFs},%
+description={Anisotropic Diffusion Filter},%
+descriptionplural={Anisotropic Diffusion Filter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Anisotropic Diffusion Filter},%
+longplural={Anisotropic Diffusion Filters},%
+short={ADF},%
+shortplural={ADFs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{BF}%
+{%
+name={\acronymfont {\glsentryshort {BF}}},%
+sort={BF},%
+type={acronym},%
+first={BF},%
+firstplural={BFs},%
+text={BF},%
+plural={BFs},%
+description={Bilateral Filter},%
+descriptionplural={Bilateral Filter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Bilateral Filter},%
+longplural={Bilateral Filters},%
+short={BF},%
+shortplural={BFs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{TV}%
+{%
+name={\acronymfont {\glsentryshort {TV}}},%
+sort={TV},%
+type={acronym},%
+first={TV},%
+firstplural={TVs},%
+text={TV},%
+plural={TVs},%
+description={Total Variation},%
+descriptionplural={Total Variation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Total Variation},%
+longplural={Total Variations},%
+short={TV},%
+shortplural={TVs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{NLM}%
+{%
+name={\acronymfont {\glsentryshort {NLM}}},%
+sort={NLM},%
+type={acronym},%
+first={NLM},%
+firstplural={NLMs},%
+text={NLM},%
+plural={NLMs},%
+description={Non-Local Means},%
+descriptionplural={Non-Local Means},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Non-Local Means},%
+longplural={Non-Local Meanss},%
+short={NLM},%
+shortplural={NLMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{DSP}%
+{%
+name={\acronymfont {\glsentryshort {DSP}}},%
+sort={DSP},%
+type={acronym},%
+first={DSP},%
+firstplural={DSPs},%
+text={DSP},%
+plural={DSPs},%
+description={Digital Signal Processing},%
+descriptionplural={Digital Signal Processing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Digital Signal Processing},%
+longplural={Digital Signal Processings},%
+short={DSP},%
+shortplural={DSPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ROF}%
+{%
+name={\acronymfont {\glsentryshort {ROF}}},%
+sort={ROF},%
+type={acronym},%
+first={ROF},%
+firstplural={ROFs},%
+text={ROF},%
+plural={ROFs},%
+description={Rudin-Osher-Fatemi model},%
+descriptionplural={Rudin-Osher-Fatemi model},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Rudin-Osher-Fatemi model},%
+longplural={Rudin-Osher-Fatemi models},%
+short={ROF},%
+shortplural={ROFs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{MROF}%
+{%
+name={\acronymfont {\glsentryshort {MROF}}},%
+sort={MROF},%
+type={acronym},%
+first={MROF},%
+firstplural={MROFs},%
+text={MROF},%
+plural={MROFs},%
+description={Modified Rudin-Osher-Fatemi model},%
+descriptionplural={Modified Rudin-Osher-Fatemi model},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Modified Rudin-Osher-Fatemi model},%
+longplural={Modified Rudin-Osher-Fatemi models},%
+short={MROF},%
+shortplural={MROFs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PRBF}%
+{%
+name={\acronymfont {\glsentryshort {PRBF}}},%
+sort={PRBF},%
+type={acronym},%
+first={PRBF},%
+firstplural={PRBFs},%
+text={PRBF},%
+plural={PRBFs},%
+description={Poisson Reducing Bilateral Filter},%
+descriptionplural={Poisson Reducing Bilateral Filter},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Poisson Reducing Bilateral Filter},%
+longplural={Poisson Reducing Bilateral Filters},%
+short={PRBF},%
+shortplural={PRBFs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ATV}%
+{%
+name={\acronymfont {\glsentryshort {ATV}}},%
+sort={ATV},%
+type={acronym},%
+first={ATV},%
+firstplural={ATVs},%
+text={ATV},%
+plural={ATVs},%
+description={Adaptive Total Variation method},%
+descriptionplural={Adaptive Total Variation method},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Adaptive Total Variation method},%
+longplural={Adaptive Total Variation methods},%
+short={ATV},%
+shortplural={ATVs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{R-L}%
+{%
+name={\acronymfont {\glsentryshort {R-L}}},%
+sort={R-L},%
+type={acronym},%
+first={R-L},%
+firstplural={R-Ls},%
+text={R-L},%
+plural={R-Ls},%
+description={Richardson-Lucy algorithm},%
+descriptionplural={Richardson-Lucy algorithm},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Richardson-Lucy algorithm},%
+longplural={Richardson-Lucy algorithms},%
+short={R-L},%
+shortplural={R-Ls},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{FNLM}%
+{%
+name={\acronymfont {\glsentryshort {FNLM}}},%
+sort={FNLM},%
+type={acronym},%
+first={FNLM},%
+firstplural={FNLMs},%
+text={FNLM},%
+plural={FNLMs},%
+description={Fast Non-Local Means},%
+descriptionplural={Fast Non-Local Means},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fast Non-Local Means},%
+longplural={Fast Non-Local Meanss},%
+short={FNLM},%
+shortplural={FNLMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{CNR}%
+{%
+name={\acronymfont {\glsentryshort {CNR}}},%
+sort={CNR},%
+type={acronym},%
+first={CNR},%
+firstplural={CNRs},%
+text={CNR},%
+plural={CNRs},%
+description={Contrast to Noise Ratio},%
+descriptionplural={Contrast to Noise Ratio},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Contrast to Noise Ratio},%
+longplural={Contrast to Noise Ratios},%
+short={CNR},%
+shortplural={CNRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{COV}%
+{%
+name={\acronymfont {\glsentryshort {COV}}},%
+sort={COV},%
+type={acronym},%
+first={COV},%
+firstplural={COVs},%
+text={COV},%
+plural={COVs},%
+description={Coefficient of Variation},%
+descriptionplural={Coefficient of Variation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Coefficient of Variation},%
+longplural={Coefficient of Variations},%
+short={COV},%
+shortplural={COVs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{NIQE}%
+{%
+name={\acronymfont {\glsentryshort {NIQE}}},%
+sort={NIQE},%
+type={acronym},%
+first={NIQE},%
+firstplural={NIQEs},%
+text={NIQE},%
+plural={NIQEs},%
+description={Natural Image Quality Evaluator},%
+descriptionplural={Natural Image Quality Evaluator},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Natural Image Quality Evaluator},%
+longplural={Natural Image Quality Evaluators},%
+short={NIQE},%
+shortplural={NIQEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{BRISQUE}%
+{%
+name={\acronymfont {\glsentryshort {BRISQUE}}},%
+sort={BRISQUE},%
+type={acronym},%
+first={BRISQUE},%
+firstplural={BRISQUEs},%
+text={BRISQUE},%
+plural={BRISQUEs},%
+description={Blind/Referenceless Image Spatial Quality Evaluator},%
+descriptionplural={Blind/Referenceless Image Spatial Quality Evaluator},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Blind/Referenceless Image Spatial Quality Evaluator},%
+longplural={Blind/Referenceless Image Spatial Quality Evaluators},%
+short={BRISQUE},%
+shortplural={BRISQUEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{NNPS}%
+{%
+name={\acronymfont {\glsentryshort {NNPS}}},%
+sort={NNPS},%
+type={acronym},%
+first={NNPS},%
+firstplural={NNPSs},%
+text={NNPS},%
+plural={NNPSs},%
+description={Normalized Noise Power Spectrum},%
+descriptionplural={Normalized Noise Power Spectrum},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Normalized Noise Power Spectrum},%
+longplural={Normalized Noise Power Spectrums},%
+short={NNPS},%
+shortplural={NNPSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{MSE}%
+{%
+name={\acronymfont {\glsentryshort {MSE}}},%
+sort={MSE},%
+type={acronym},%
+first={MSE},%
+firstplural={MSEs},%
+text={MSE},%
+plural={MSEs},%
+description={Mean Squared Error},%
+descriptionplural={Mean Squared Error},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Mean Squared Error},%
+longplural={Mean Squared Errors},%
+short={MSE},%
+shortplural={MSEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{FIR}%
+{%
+name={\acronymfont {\glsentryshort {FIR}}},%
+sort={FIR},%
+type={acronym},%
+first={FIR},%
+firstplural={FIRs},%
+text={FIR},%
+plural={FIRs},%
+description={finite impulse response},%
+descriptionplural={finite impulse response},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={finite impulse response},%
+longplural={finite impulse responses},%
+short={FIR},%
+shortplural={FIRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{BM3D}%
+{%
+name={\acronymfont {\glsentryshort {BM3D}}},%
+sort={BM3D},%
+type={acronym},%
+first={BM3D},%
+firstplural={BM3Ds},%
+text={BM3D},%
+plural={BM3Ds},%
+description={Block Matching and 3D filtering},%
+descriptionplural={Block Matching and 3D filtering},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Block Matching and 3D filtering},%
+longplural={Block Matching and 3D filterings},%
+short={BM3D},%
+shortplural={BM3Ds},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PURE-LET}%
+{%
+name={\acronymfont {\glsentryshort {PURE-LET}}},%
+sort={PURE-LET},%
+type={acronym},%
+first={PURE-LET},%
+firstplural={PURE-LETs},%
+text={PURE-LET},%
+plural={PURE-LETs},%
+description={Poisson Unbiased Risk Estimation – Linear Expansion of Thresholds},%
+descriptionplural={Poisson Unbiased Risk Estimation – Linear Expansion of Thresholds},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Poisson Unbiased Risk Estimation – Linear Expansion of Thresholds},%
+longplural={Poisson Unbiased Risk Estimation – Linear Expansion of Thresholdss},%
+short={PURE-LET},%
+shortplural={PURE-LETs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{DTCWT}%
+{%
+name={\acronymfont {\glsentryshort {DTCWT}}},%
+sort={DTCWT},%
+type={acronym},%
+first={DTCWT},%
+firstplural={DTCWTs},%
+text={DTCWT},%
+plural={DTCWTs},%
+description={dual tree complex wavelet transform},%
+descriptionplural={dual tree complex wavelet transform},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={dual tree complex wavelet transform},%
+longplural={dual tree complex wavelet transforms},%
+short={DTCWT},%
+shortplural={DTCWTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ASO}%
+{%
+name={\acronymfont {\glsentryshort {ASO}}},%
+sort={ASO},%
+type={acronym},%
+first={ASO},%
+firstplural={ASOs},%
+text={ASO},%
+plural={ASOs},%
+description={Atom Search Optimization},%
+descriptionplural={Atom Search Optimization},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Atom Search Optimization},%
+longplural={Atom Search Optimizations},%
+short={ASO},%
+shortplural={ASOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PURE}%
+{%
+name={\acronymfont {\glsentryshort {PURE}}},%
+sort={PURE},%
+type={acronym},%
+first={PURE},%
+firstplural={PUREs},%
+text={PURE},%
+plural={PUREs},%
+description={Poisson Unbiased Risk Estimation},%
+descriptionplural={Poisson Unbiased Risk Estimation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Poisson Unbiased Risk Estimation},%
+longplural={Poisson Unbiased Risk Estimations},%
+short={PURE},%
+shortplural={PUREs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{MS-VST}%
+{%
+name={\acronymfont {\glsentryshort {MS-VST}}},%
+sort={MS-VST},%
+type={acronym},%
+first={MS-VST},%
+firstplural={MS-VSTs},%
+text={MS-VST},%
+plural={MS-VSTs},%
+description={multiscale variance stabilizing transform},%
+descriptionplural={multiscale variance stabilizing transform},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={multiscale variance stabilizing transform},%
+longplural={multiscale variance stabilizing transforms},%
+short={MS-VST},%
+shortplural={MS-VSTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{MMI}%
+{%
+name={\acronymfont {\glsentryshort {MMI}}},%
+sort={MMI},%
+type={acronym},%
+first={MMI},%
+firstplural={MMIs},%
+text={MMI},%
+plural={MMIs},%
+description={Multiscale Multiplicative Innovations},%
+descriptionplural={Multiscale Multiplicative Innovations},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Multiscale Multiplicative Innovations},%
+longplural={Multiscale Multiplicative Innovationss},%
+short={MMI},%
+shortplural={MMIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{IBS}%
+{%
+name={\acronymfont {\glsentryshort {IBS}}},%
+sort={IBS},%
+type={acronym},%
+first={IBS},%
+firstplural={IBSs},%
+text={IBS},%
+plural={IBSs},%
+description={improved threshold shrinkage},%
+descriptionplural={improved threshold shrinkage},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={improved threshold shrinkage},%
+longplural={improved threshold shrinkages},%
+short={IBS},%
+shortplural={IBSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PCCT}%
+{%
+name={\acronymfont {\glsentryshort {PCCT}}},%
+sort={PCCT},%
+type={acronym},%
+first={PCCT},%
+firstplural={PCCTs},%
+text={PCCT},%
+plural={PCCTs},%
+description={Photon-counting CT},%
+descriptionplural={Photon-counting CT},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Photon-counting CT},%
+longplural={Photon-counting CTs},%
+short={PCCT},%
+shortplural={PCCTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PCA}%
+{%
+name={\acronymfont {\glsentryshort {PCA}}},%
+sort={PCA},%
+type={acronym},%
+first={PCA},%
+firstplural={PCAs},%
+text={PCA},%
+plural={PCAs},%
+description={Principal Component Analysis},%
+descriptionplural={Principal Component Analysis},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Principal Component Analysis},%
+longplural={Principal Component Analysiss},%
+short={PCA},%
+shortplural={PCAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{HNIPM}%
+{%
+name={\acronymfont {\glsentryshort {HNIPM}}},%
+sort={HNIPM},%
+type={acronym},%
+first={HNIPM},%
+firstplural={HNIPMs},%
+text={HNIPM},%
+plural={HNIPMs},%
+description={Hybrid Non-iterative Poisson Model},%
+descriptionplural={Hybrid Non-iterative Poisson Model},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Hybrid Non-iterative Poisson Model},%
+longplural={Hybrid Non-iterative Poisson Models},%
+short={HNIPM},%
+shortplural={HNIPMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{LPA-RICI}%
+{%
+name={\acronymfont {\glsentryshort {LPA-RICI}}},%
+sort={LPA-RICI},%
+type={acronym},%
+first={LPA-RICI},%
+firstplural={LPA-RICIs},%
+text={LPA-RICI},%
+plural={LPA-RICIs},%
+description={Local Polynomial Approximation - Relative Intersection of Confidence Intervals},%
+descriptionplural={Local Polynomial Approximation - Relative Intersection of Confidence Intervals},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Local Polynomial Approximation - Relative Intersection of Confidence Intervals},%
+longplural={Local Polynomial Approximation - Relative Intersection of Confidence Intervalss},%
+short={LPA-RICI},%
+shortplural={LPA-RICIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ICA}%
+{%
+name={\acronymfont {\glsentryshort {ICA}}},%
+sort={ICA},%
+type={acronym},%
+first={ICA},%
+firstplural={ICAs},%
+text={ICA},%
+plural={ICAs},%
+description={Independent Component Analysis},%
+descriptionplural={Independent Component Analysis},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Independent Component Analysis},%
+longplural={Independent Component Analysiss},%
+short={ICA},%
+shortplural={ICAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ML}%
+{%
+name={\acronymfont {\glsentryshort {ML}}},%
+sort={ML},%
+type={acronym},%
+first={ML},%
+firstplural={MLs},%
+text={ML},%
+plural={MLs},%
+description={Machine Learning},%
+descriptionplural={Machine Learning},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Machine Learning},%
+longplural={Machine Learnings},%
+short={ML},%
+shortplural={MLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{CNN}%
+{%
+name={\acronymfont {\glsentryshort {CNN}}},%
+sort={CNN},%
+type={acronym},%
+first={CNN},%
+firstplural={CNNs},%
+text={CNN},%
+plural={CNNs},%
+description={Convolutional Neural Networks},%
+descriptionplural={Convolutional Neural Networks},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Convolutional Neural Networks},%
+longplural={Convolutional Neural Networkss},%
+short={CNN},%
+shortplural={CNNs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{GPU}%
+{%
+name={\acronymfont {\glsentryshort {GPU}}},%
+sort={GPU},%
+type={acronym},%
+first={GPU},%
+firstplural={GPUs},%
+text={GPU},%
+plural={GPUs},%
+description={Graphical Processing Unit},%
+descriptionplural={Graphical Processing Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Graphical Processing Unit},%
+longplural={Graphical Processing Units},%
+short={GPU},%
+shortplural={GPUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{N2N}%
+{%
+name={\acronymfont {\glsentryshort {N2N}}},%
+sort={N2N},%
+type={acronym},%
+first={N2N},%
+firstplural={N2Ns},%
+text={N2N},%
+plural={N2Ns},%
+description={Noise2Noise},%
+descriptionplural={Noise2Noise},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Noise2Noise},%
+longplural={Noise2Noises},%
+short={N2N},%
+shortplural={N2Ns},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{N2V}%
+{%
+name={\acronymfont {\glsentryshort {N2V}}},%
+sort={N2V},%
+type={acronym},%
+first={N2V},%
+firstplural={N2Vs},%
+text={N2V},%
+plural={N2Vs},%
+description={Noise2Void},%
+descriptionplural={Noise2Void},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Noise2Void},%
+longplural={Noise2Voids},%
+short={N2V},%
+shortplural={N2Vs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{WNNM}%
+{%
+name={\acronymfont {\glsentryshort {WNNM}}},%
+sort={WNNM},%
+type={acronym},%
+first={WNNM},%
+firstplural={WNNMs},%
+text={WNNM},%
+plural={WNNMs},%
+description={Weighted nuclear norm minimization},%
+descriptionplural={Weighted nuclear norm minimization},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Weighted nuclear norm minimization},%
+longplural={Weighted nuclear norm minimization s},%
+short={WNNM},%
+shortplural={WNNMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{DnCNN}%
+{%
+name={\acronymfont {\glsentryshort {DnCNN}}},%
+sort={DnCNN},%
+type={acronym},%
+first={DnCNN},%
+firstplural={DnCNNs},%
+text={DnCNN},%
+plural={DnCNNs},%
+description={denoising convolutional neural networks},%
+descriptionplural={denoising convolutional neural networks},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={denoising convolutional neural networks},%
+longplural={denoising convolutional neural networkss},%
+short={DnCNN},%
+shortplural={DnCNNs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PKAID-Net}%
+{%
+name={\acronymfont {\glsentryshort {PKAID-Net}}},%
+sort={PKAID-Net},%
+type={acronym},%
+first={PKAID-Net},%
+firstplural={PKAID-Nets},%
+text={PKAID-Net},%
+plural={PKAID-Nets},%
+description={prior knowledge-aware iterative denoising neural network},%
+descriptionplural={prior knowledge-aware iterative denoising neural network},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={prior knowledge-aware iterative denoising neural network},%
+longplural={prior knowledge-aware iterative denoising neural networks},%
+short={PKAID-Net},%
+shortplural={PKAID-Nets},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{VMI}%
+{%
+name={\acronymfont {\glsentryshort {VMI}}},%
+sort={VMI},%
+type={acronym},%
+first={VMI},%
+firstplural={VMIs},%
+text={VMI},%
+plural={VMIs},%
+description={Virtual Monoenergetic Images},%
+descriptionplural={Virtual Monoenergetic Images},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Monoenergetic Images},%
+longplural={Virtual Monoenergetic Imagess},%
+short={VMI},%
+shortplural={VMIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{MRI}%
+{%
+name={\acronymfont {\glsentryshort {MRI}}},%
+sort={MRI},%
+type={acronym},%
+first={MRI},%
+firstplural={MRIs},%
+text={MRI},%
+plural={MRIs},%
+description={Magnetic Resonance Imaging},%
+descriptionplural={Magnetic Resonance Imaging},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Magnetic Resonance Imaging},%
+longplural={Magnetic Resonance Imagings},%
+short={MRI},%
+shortplural={MRIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mySymbol}%
+{%
+name={\textrm {$\Upsilon $}},%
+sort={thresh},%
+type={symbol},%
+first={\protect \textrm  {$\Upsilon $}},%
+firstplural={\protect \textrm  {$\Upsilon $}s},%
+text={\protect \textrm  {$\Upsilon $}},%
+plural={\protect \textrm  {$\Upsilon $}s},%
+description={Arbitrary symbol.},%
+descriptionplural={Arbitrary symbol.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{anodeVoltage}%
+{%
+name={\textrm {$U$}},%
+sort={anodevoltage},%
+type={symbol},%
+first={\protect \textrm  {$U$}},%
+firstplural={\protect \textrm  {$U$}s},%
+text={\protect \textrm  {$U$}},%
+plural={\protect \textrm  {$U$}s},%
+description={Anode voltage},%
+descriptionplural={Anode voltage},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{linear attenuation coefficient}%
+{%
+name={\textrm {$\mu $}},%
+sort={linearattenuationcoefficient},%
+type={symbol},%
+first={\protect \textrm  {$\mu $}},%
+firstplural={\protect \textrm  {$\mu $}s},%
+text={\protect \textrm  {$\mu $}},%
+plural={\protect \textrm  {$\mu $}s},%
+description={linear attenuation coefficient},%
+descriptionplural={linear attenuation coefficient},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mass attenuation coefficient}%
+{%
+name={\textrm {$\rho /\mu $}},%
+sort={massattenuationcoefficient},%
+type={symbol},%
+first={\protect \textrm  {$\rho /\mu $}},%
+firstplural={\protect \textrm  {$\rho /\mu $}s},%
+text={\protect \textrm  {$\rho /\mu $}},%
+plural={\protect \textrm  {$\rho /\mu $}s},%
+description={mass attenuation coefficient},%
+descriptionplural={mass attenuation coefficient},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

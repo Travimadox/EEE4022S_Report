@@ -1,0 +1,74 @@
+% Chapter 1 - Introduction
+
+\glsresetall % reset the glossary to expand acronyms again
+\chapter[Introduction]{Introduction}\label{ch:Introduction}
+\index{Introduction}
+
+% Introduction
+%zincorprate section 2.1 and 2.2 from lit review into the introduction chapter
+\section{Background}
+Timely and accurate diagnosis is a critical feature of trauma care as it directly impacts patients survival. Studies have shown that accurate information acquired during the \gls{goldenhour} is essential to saving patients' lives in trauma centres\cite{fu_lodoxstatscan_2008},\cite{fu_lodoxstatscan_2011}. One of the most important diagnostic tools in trauma care is medical imaging as it allows healthcare professionals to visualise internal body structures non-invasively. This gives accurate information on the extent of injuries enabling them to develop an effective prioritisation plan for the treatment phase. Among the many medical imaging technologies, X-ray remains one of the most widely used due to its rapid acquisition and cost-effectiveness compared to other medical imaging modalities\cite{juneja_denoising_2024}. However, traditional X-ray systems, while widely used, can delay the life-saving process in time-sensitive situations as it can take up to 8-48 minutes to get a full body scan\cite{beningfield_report_2003}.
+
+ Given the critical time delays associated with traditional X-ray systems, the need for a more efficient imaging solution becomes evident. The LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} system offers a breakthrough, with its ability to produce full-body scans in under 13 seconds\cite{beningfield_report_2003},\cite{amirlak_novel_2009},\cite{noauthor_full-body_nodate}. This represents a significant advancement in trauma care, particularly in scenarios where every second counts, such as mass trauma events\cite{exadaktylos_total-body_2008},\cite{lodoxsystems_lodox_2018-1},\cite{whiley_full-body_2013}. Its reduced radiation dose further mitigates the risks associated with repeated imaging, making it a preferred choice in emergency settings\cite{exadaktylos_total-body_2008}.
+
+
+
+Despite its advantages, the LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} faces the challenge of high noise levels which comprises image quality. De Villiers showed that this increased noise is primarily due to the low X-ray dose used\cite{PhDMattieu}. LODOX\textsuperscript{\textregistered} has sought to improve this by replacing the \gls{CCD} with \gls{PCD}\cite{ProjectBrief}. While studies have shown that \gls{PCD} technology does not increase noise in \gls{CT} scans\cite{huber_dedicated_2022}, there is concern that its introduction to LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} systems may exacerbate the existing noise issue, potentially affecting diagnostic accuracy. This highlights the critical need for customised denoising algorithms for LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} , which is the focus of this project.
+
+
+
+
+% Motivation
+\section{Motivation}
+The increasing noise levels in LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images due to low X-ray dose pose a significant challenge to maintaining diagnostic accuracy\cite{PhDMattieu}.  Despite extensive research on denoising in traditional X-rays, CT scans, and ultrasound, the specific challenges posed by noise in LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images remain under-explored, creating a critical gap that this research aims to address. With the growing adoption of LODOX scanners in trauma centres worldwide\cite{noauthor_full-body_nodate},\cite{evangelopoulos_personal_2009}, the unresolved noise issues threaten to undermine the very benefits that make these scanners invaluable in emergency care. By developing an effective denoising model for LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images, this research not only seeks to enhance image clarity but also aims to ensure that the advantages of low-dose imaging do not come at the cost of diagnostic accuracy.
+
+% Problem Overview
+\section{Problem Statement}
+The central research question is: "How can noise in Lodox Statscan images be effectively modelled and reduced while preserving  their diagnostic quality and accuracy in trauma care?" Given the unique challenges of low-dose imaging and the incorporation of the \gls{PCD},this research aims to explore whether specialised denoising algorithms can be developed to overcome these issues. Although techniques like BM3D have proven effective in conventional \gls{CT} scans\cite{harrison_multichannel_2017}, they may not be directly applicable to LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images due to the specific noise characteristics introduced by low-dose, highlighting the need for a customised approach.
+
+
+
+
+\section{Objectives}
+The main objective of this thesis is to develop a robust denoising model for Lodox Statscan images. 
+
+This can further be broken down into the following set objectives:
+
+\begin{enumerate}
+    \item Review and compare existing denoising methods used in medical imaging, specifically X-ray imaging.
+    \item Adapt or develop new signal processing and/or machine learning techniques for noise reduction in LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images.
+    \item Validate the proposed model using imaging phantoms and determine optimal parameters for noise reduction.
+    \item Develop a user interface that goes along with the denoising algorithm to enable easy user access and use.
+\end{enumerate}
+ 
+
+% Thesis Contributions
+\section[Contributions]{Thesis Contributions}
+The main contributions of this thesis are as follows:
+
+\begin{enumerate}
+    \item A comprehensive review of current denoising techniques for medical imaging.
+    \item Development of a novel denoising model specifically designed for LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images.
+    \item Implementation and evaluation of the proposed model, demonstrating its effectiveness in reducing noise while preserving image quality.
+\end{enumerate}
+ 
+
+
+
+%\section{Terms of Reference}
+
+
+
+\section{Scope and Limitations}
+This project solely focuses on enhancing LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} image quality by developing a custom denoising model using controlled non-anthropomorphic phantom studies, and it does not extend to clinical trials. The choice of non-anthropomorphic phantoms, including those provided by LODOX\textsuperscript{\textregistered} and carefully selected everyday objects, is driven by their ability to simulate relevant imaging conditions while staying within project constraints. The exclusive focus on phantom studies limits the ability to translate findings to clinical practice directly, and additional validation in a clinical setting would be necessary to confirm the model's efficacy in real-world trauma scenarios. Additionally, given the model's design specifically for LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images, adaptation to other low-dose imaging systems may require additional tuning to accommodate different noise profiles. While these limitations confine the current study, they also highlight areas for future research, including clinical validation and the exploration of more comprehensive denoising models.
+
+
+% Thesis Outline
+\section[Outline]{Thesis Outline}
+The remainder of this thesis is organized as follows:\\
+\noindent\textbf{Chapter 2, Literature Review:}  Reviews the theoretical foundations and related work in medical imaging and denoising techniques.\\
+\noindent\textbf{Chapter 3, Methodology:} Details the research design, data collection methods, and the development of the denoising model.\\
+\noindent\textbf{Chapter 4, Design:} Discusses the implementation of the denoising algorithms and the computational framework\\
+\noindent\textbf{Chapter 5, Results:} Presents the findings from evaluating the denoising model.
+\\
+\noindent\textbf{Chapter 6, Conclusions:} Summarizes the research contributions, discusses limitations, and suggests directions for future work.

@@ -1,0 +1,194 @@
+% -> FILE DESCRIPTION :: Glossary.tex
+%	This files contains all of your glossaries. It has been configured to have your main glossary (definitions), acronym glossary and symbols glossary.
+
+% ---------------------------------------------------------------------------------------------%
+
+% MAIN (Definitions) GLOSSARY
+% \newglossaryentry{NameInLink}{
+%	name={NameToShow},
+%	sort=NameInSort,
+%	description={What does it mean?}
+%	}
+\newglossaryentry{goldenhour}
+{
+	name={golden hour},
+	sort=golden hour,
+	description={term often used in trauma or emergency care to suggest that an injured or sick person must receive definitive treatment within the first 60 minutes from the time of injury or appearance of symptoms}
+}
+
+\newglossaryentry{diction}
+{
+	name={diction},
+	sort=diction,
+	description={the choice and use of words and phrases in speech or writing}
+}
+\newglossaryentry{lexicon}
+{
+	name={lexicon},
+	sort=lexicon,
+	description={the vocabulary of a person, language, or branch of knowledge}
+}
+
+\newglossaryentry{prose}
+{
+	name={prose},
+	sort=prose,
+	description={written or spoken language in its ordinary form, without metrical structure}
+}
+\newglossaryentry{ADC}
+{
+	name={ADC},
+	sort=ADC,
+	description={Analogue-to-Digital Converter}
+}
+
+\newglossaryentry{Anscombe transform}
+{
+	name={Anscombe transform},
+	sort=Anscombe transform,
+	description={A variance-stabilizing transformation used to approximate the distribution of Poisson-distributed data by a normal distribution, often applied in image processing and statistics.}
+}
+
+\newglossaryentry{Staircase effect}
+{
+	name={Staircase effect},
+	sort=Staircase effect,
+	description={An artifact in digital imaging where smooth gradations of intensity are represented by abrupt steps or bands, rather than a continuous transition. This effect is commonly observed in images with low bit depth or when using inadequate interpolation methods.}
+}
+
+\newglossaryentry{Yaroslavsky filter}
+{
+	name={Yaroslavsky filter},
+	sort=Yaroslavsky filter,
+	description={A type of neighbourhood filter used in image processing for denoising images. It averages pixel values in a neighborhood but only includes those with similar intensity to the central pixel, effectively reducing noise while preserving edges. This method is computationally efficient and commonly used in fields like medical imaging and photography.}
+}
+
+\newglossaryentry{U-Net}
+{
+    name={U-Net},
+    sort=Unet,
+    description={A type of convolutional neural network architecture primarily used for image segmentation tasks. It consists of an encoder-decoder structure with skip connections, enabling precise localisation and efficient learning from limited data. U-Net is widely used in medical image analysis due to its ability to produce accurate segmentation even with small training datasets.}
+}
+
+\newglossaryentry{FBPtransNet}
+{
+    name={FBPTransNet},
+    sort=FBPTransNet,
+    description={A neural network architecture that enhances image quality in CT scans by replacing the maximum pooling layers of FBPconvNet with Transformer modules. FBPTransNet features dual inlets and outlets to simultaneously process high and low energy CT images, and employs a multi-head attention mechanism to effectively model noise maps and recover fine texture details in the denoised images.}
+}
+
+\newglossaryentry{FBPconvNet}
+{
+    name={FBPconvNet},
+    sort=FBPconvNet,
+    description={A convolutional neural network architecture designed for improving image reconstruction in CT scans. It builds upon the traditional Filtered Back Projection (FBP) method by introducing convolutional layers that enhance image quality, particularly in low-dose CT images. FBPconvNet focuses on reducing artifacts and noise while preserving essential image details.}
+}
+
+
+
+% ---------------------------------------------------------------------------------------------%
+
+% ACRONYMS
+% \newacronym{NameInSort}{NameToShow}{Definition}
+\newacronym{lol}{LOL!}{Laugh Out Loud}
+\newacronym{CCD}{CCD}{Charge Coupled Detector}
+\newacronym{PCD}{PCD}{Photon Counting Detector}
+\newacronym{CT}{CT}{Computed Tomography}
+\newacronym{DNA}{DNA}{Deoxyribonucleic Acid}
+\newacronym{UV}{UV}{Ultraviolet rays}
+\newacronym{OD}{OD}{Optical Density}
+\newacronym{CMOS}{CMOS}{complementary metal-oxide semiconductor}
+\newacronym{A/D}{A/D}{analog-to-digital converter}
+\newacronym{PMT}{PMT}{Photomultiplier detectors}
+\newacronym{ASP}{ASP}{Arm Scanning and Positioning Assembly}
+\newacronym{BFU}{BFU}{Base Frame Unit}
+\newacronym{SH}{SH}{Support Housing}
+\newacronym{TDI}{TDI}{Time Delay and Integration}
+\newacronym{BMI}{BMI}{Body Mass Index}
+\newacronym{SNR}{SNR}{Signal-to-Noise Ratio}
+\newacronym{PSNR}{PSNR}{Peak Signal-to-Noise Ratio}
+\newacronym{AP}{AP}{anteroposterior}
+\newacronym{FDA}{FDA}{The United States Food and Drug Administration Agency}
+\newacronym{ASIC}{ASIC}{application-specific integrated circuits}
+\newacronym{AWGN}{AWGN}{Additive White Gaussian Noise}
+\newacronym{VST}{VST}{Variance Stabilising Transform}
+\newacronym{ADF}{ADF}{Anisotropic Diffusion Filter}
+\newacronym{BF}{BF}{Bilateral Filter}
+\newacronym{TV}{TV}{Total Variation}
+\newacronym{NLM}{NLM}{Non-Local Means}
+\newacronym{DSP}{DSP}{Digital Signal Processing}
+\newacronym{ROF}{ROF}{Rudin-Osher-Fatemi model}
+\newacronym{MROF}{MROF}{Modified Rudin-Osher-Fatemi model}
+\newacronym{PRBF}{PRBF}{Poisson Reducing Bilateral Filter}
+\newacronym{ATV}{ATV}{Adaptive Total Variation method}
+\newacronym{R-L}{R-L}{Richardson-Lucy algorithm}
+\newacronym{FNLM}{FNLM}{Fast Non-Local Means}
+\newacronym{CNR}{CNR}{Contrast to Noise Ratio}
+\newacronym{COV}{COV}{Coefficient of Variation}
+\newacronym{NIQE}{NIQE}{Natural Image Quality Evaluator}
+\newacronym{BRISQUE}{BRISQUE}{Blind/Referenceless Image Spatial Quality Evaluator}
+\newacronym{NNPS}{NNPS}{Normalized Noise Power Spectrum}
+\newacronym{MSE}{MSE}{Mean Squared Error}
+\newacronym{FIR}{FIR}{finite impulse response}
+\newacronym{BM3D}{BM3D}{Block Matching and 3D filtering}
+\newacronym{PURE-LET}{PURE-LET}{Poisson Unbiased Risk Estimation – Linear Expansion of Thresholds}
+\newacronym{DTCWT}{DTCWT}{dual tree complex wavelet transform}
+\newacronym{ASO}{ASO}{Atom Search Optimization}
+\newacronym{PURE}{PURE}{Poisson Unbiased Risk Estimation}
+\newacronym{MS-VST}{MS-VST}{multiscale variance stabilizing transform}
+\newacronym{MMI}{MMI}{Multiscale Multiplicative Innovations}
+\newacronym{IBS}{IBS}{improved threshold shrinkage}
+\newacronym{PCCT}{PCCT}{Photon-counting CT}
+\newacronym{PCA}{PCA}{Principal Component Analysis}
+\newacronym{HNIPM}{HNIPM}{Hybrid Non-iterative Poisson Model}
+\newacronym{LPA-RICI}{LPA-RICI}{Local Polynomial Approximation - Relative Intersection of Confidence Intervals}
+\newacronym{ICA}{ICA}{Independent Component Analysis}
+\newacronym{ML}{ML}{Machine Learning}
+\newacronym{CNN}{CNN}{Convolutional Neural Networks}
+\newacronym{GPU}{GPU}{Graphical Processing Unit}
+\newacronym{N2N}{N2N}{Noise2Noise}
+\newacronym{N2V}{N2V}{Noise2Void}
+\newacronym{WNNM}{WNNM}{Weighted nuclear norm minimization }
+\newacronym{DnCNN}{DnCNN}{denoising convolutional neural networks}
+\newacronym{PKAID-Net}{PKAID-Net}{prior knowledge-aware iterative denoising neural network}
+\newacronym{VMI}{VMI}{Virtual Monoenergetic Images}
+\newacronym{MRI}{MRI}{Magnetic Resonance Imaging}
+
+% ---------------------------------------------------------------------------------------------%
+
+% SYMBOLS
+% \newglossaryentry{NameInLink}{
+%	type=symbol, 
+%	name={NameToShow},
+%	sort=NameInSort,
+%	description={What does it mean?}
+%	}
+
+\newglossaryentry{mySymbol}{
+	type=symbol,
+	name={\textrm{$\Upsilon$}},
+	sort=thresh,
+	description={Arbitrary symbol.}
+}
+
+\newglossaryentry{anodeVoltage}{
+    type=symbol,
+    name={\textrm{$U$}},
+    sort=anodevoltage,
+    description={Anode voltage}
+}
+
+
+\newglossaryentry{linear attenuation coefficient}{
+	type=symbol,
+	name={\textrm{$\mu$}},
+	sort=linearattenuationcoefficient,
+	description={linear attenuation coefficient}
+}
+
+\newglossaryentry{mass attenuation coefficient}{
+	type=symbol,
+	name={\textrm{$\rho/\mu$}},
+	sort=massattenuationcoefficient,
+	description={mass attenuation coefficient}
+}
