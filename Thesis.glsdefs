@@ -306,6 +306,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{DICOM}%
+{%
+name={DICOM},%
+sort={DICOM},%
+type={main},%
+first={DICOM},%
+firstplural={DICOMs},%
+text={DICOM},%
+plural={DICOMs},%
+description={Digital Imaging and Communications in Medicine (DICOM) is a standard for handling, storing, transmitting, and viewing medical imaging information. It enables the integration of medical imaging devices, such as scanners and servers, and ensures interoperability between different systems and institutions. DICOM defines both the image formats and the protocols for communication, making it essential in modern medical imaging environments, including radiology and cardiology.},%
+descriptionplural={Digital Imaging and Communications in Medicine (DICOM) is a standard for handling, storing, transmitting, and viewing medical imaging information. It enables the integration of medical imaging devices, such as scanners and servers, and ensures interoperability between different systems and institutions. DICOM defines both the image formats and the protocols for communication, making it essential in modern medical imaging environments, including radiology and cardiology.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{lol}%
 {%
 name={\acronymfont {\glsentryshort {lol}}},%
@@ -2065,6 +2093,90 @@ long={Magnetic Resonance Imaging},%
 longplural={Magnetic Resonance Imagings},%
 short={MRI},%
 shortplural={MRIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{SSIM}%
+{%
+name={\acronymfont {\glsentryshort {SSIM}}},%
+sort={SSIM},%
+type={acronym},%
+first={SSIM},%
+firstplural={SSIMs},%
+text={SSIM},%
+plural={SSIMs},%
+description={Structural Similarity Index Measure},%
+descriptionplural={Structural Similarity Index Measure},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Structural Similarity Index Measure},%
+longplural={Structural Similarity Index Measures},%
+short={SSIM},%
+shortplural={SSIMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{GUI}%
+{%
+name={\acronymfont {\glsentryshort {GUI}}},%
+sort={GUI},%
+type={acronym},%
+first={GUI},%
+firstplural={GUIs},%
+text={GUI},%
+plural={GUIs},%
+description={Graphical User Interface},%
+descriptionplural={Graphical User Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Graphical User Interface},%
+longplural={Graphical User Interfaces},%
+short={GUI},%
+shortplural={GUIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{PIQE}%
+{%
+name={\acronymfont {\glsentryshort {PIQE}}},%
+sort={PIQE},%
+type={acronym},%
+first={PIQE},%
+firstplural={PIQEs},%
+text={PIQE},%
+plural={PIQEs},%
+description={Perception-based Image Quality Evaluator},%
+descriptionplural={Perception-based Image Quality Evaluator},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Perception-based Image Quality Evaluator},%
+longplural={Perception-based Image Quality Evaluators},%
+short={PIQE},%
+shortplural={PIQEs},%
 counter={page},%
 parent={},%
 %

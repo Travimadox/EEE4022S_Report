@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.11)  12 SEP 2024 01:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.13)  13 SEP 2024 20:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/User/Downloads/EEE4022S TRAVIMADOX WEBB V3 (Copy)/0_Config/Preamble.tex"
-(c:/Users/User/Downloads/EEE4022S TRAVIMADOX WEBB V3 (Copy)/0_Config/Preamble.tex
+**"c:/Users/User/OneDrive - University of Cape Town/Desktop/4th Year 2nd Sem/EEE4022S/EEE4022S_Report/0_Config/Preamble.tex"
+(c:/Users/User/OneDrive - University of Cape Town/Desktop/4th Year 2nd Sem/EEE4022S/EEE4022S_Report/0_Config/Preamble.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -1612,19 +1612,55 @@ Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 LaTeX Warning: Package "xcolor" has already been loaded: ignoring load-time
 (LaTeX)        option "xcdraw".
 
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
+\Gm@cnth=\count456
+\Gm@cntv=\count457
+\c@Gm@tempcnt=\count458
+\Gm@bindingoffset=\dimen360
+\Gm@wd@mp=\dimen361
+\Gm@odd@mp=\dimen362
+\Gm@even@mp=\dimen363
+\Gm@layoutwidth=\dimen364
+\Gm@layoutheight=\dimen365
+\Gm@layouthoffset=\dimen366
+\Gm@layoutvoffset=\dimen367
+\Gm@dimlist=\toks75
+ (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen368
+\lightrulewidth=\dimen369
+\cmidrulewidth=\dimen370
+\belowrulesep=\dimen371
+\belowbottomsep=\dimen372
+\aboverulesep=\dimen373
+\abovetopsep=\dimen374
+\cmidrulesep=\dimen375
+\cmidrulekern=\dimen376
+\defaultaddspace=\dimen377
+\@cmidla=\count459
+\@cmidlb=\count460
+\@aboverulesep=\dimen378
+\@belowrulesep=\dimen379
+\@thisruleclass=\count461
+\@lastruleclass=\count462
+\@thisrulewidth=\dimen380
+))
 ! Emergency stop.
-<*> ...MADOX WEBB V3 (Copy)/0_Config/Preamble.tex"
+<*> ...022S/EEE4022S_Report/0_Config/Preamble.tex"
                                                   
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 45638 strings out of 473899
- 1051583 string characters out of 5726972
+ 46186 strings out of 473899
+ 1060425 string characters out of 5726972
  1926960 words of memory out of 5000000
- 67772 multiletter control sequences out of 15000+600000
+ 68309 multiletter control sequences out of 15000+600000
  558369 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,0n,133p,2449b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,0n,133p,2489b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!

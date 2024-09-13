@@ -1,6 +1,6 @@
-PWD c:\Users\User\Downloads\EEE4022S TRAVIMADOX WEBB V3 (Copy)\0_Config
+PWD c:\Users\User\OneDrive - University of Cape Town\Desktop\4th Year 2nd Sem\EEE4022S\EEE4022S_Report\0_Config
 INPUT C:\Users\User\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\User\Downloads\EEE4022S TRAVIMADOX WEBB V3 (Copy)\0_Config\Preamble.tex
+INPUT c:\Users\User\OneDrive - University of Cape Town\Desktop\4th Year 2nd Sem\EEE4022S\EEE4022S_Report\0_Config\Preamble.tex
 OUTPUT Preamble.log
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -475,3 +475,12 @@ INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\todonotes\todonotes.
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\colortbl\colortbl.sty
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\colortbl\colortbl.sty
 INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
