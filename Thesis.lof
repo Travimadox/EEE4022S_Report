@@ -1,14 +1,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Diagram illustrating the generation of quantum noise in X-ray imaging due to the uneven distribution of X-ray photons on the PCD detector surface, resulting in a noisy image output. Created with \href {https://www.biorender.com}{BioRender.com} }}{7}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Flowchart summarising the classical filters used in X-ray image denoising}}{10}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces illustrates the \gls {U-Net} architecture, which transforms a grayscale input image into a smaller binary segmentation map using a contracting-expansive path with skip connections and no padding, progressively reducing spatial dimensions while increasing feature depth.}}{14}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \gls {N2N} architecture}}{16}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Blind-spot network showing the receptive field of a pixel, excluding the pixel itself.}}{18}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces \gls {N2V} architecture}}{19}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Waterfall models depicting the methodology overview}}{22}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Illustration of unchecking the custom filters in the DVS\textsuperscript {\textregistered } processing history menu}}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Set of training images collected}}{27}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces illustrates the \gls {U-Net} architecture, which transforms a grayscale input image into a smaller binary segmentation map using a contracting-expansive path with skip connections and no padding, progressively reducing spatial dimensions while increasing feature depth.}}{29}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces \gls {N2N} architecture}}{31}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Blind-spot network showing the receptive field of a pixel, excluding the pixel itself.}}{32}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces \gls {N2V} architecture}}{34}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Waterfall models depicting the methodology overview}}{22}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Illustration of unchecking the custom filters in the DVS\textsuperscript {\textregistered } processing history menu}}{26}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Set of training images collected}}{27}{figure.caption.34}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

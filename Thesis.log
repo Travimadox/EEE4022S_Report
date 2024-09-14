@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.13)  14 SEP 2024 01:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.9.13)  14 SEP 2024 19:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2188,7 +2188,7 @@ LaTeX Font Warning: Font shape `TS1/cmr/m/sc' undefined
 (Font)              using `TS1/cmr/m/n' instead
 (Font)              for symbol `textregistered' on input line 45.
 
-<2_Preface/uct.jpg, id=242, 100.87688pt x 126.4725pt>
+<2_Preface/uct.jpg, id=226, 100.87688pt x 126.4725pt>
 File: 2_Preface/uct.jpg Graphic file (type jpg)
 <use 2_Preface/uct.jpg>
 Package pdftex.def Info: 2_Preface/uct.jpg  used on input line 45.
@@ -2376,7 +2376,7 @@ ct.jpg>] (Thesis1.mw)
 \openout2 = `2_Preface/2_PlagiarismDeclaration.aux'.
 
  (2_Preface/2_PlagiarismDeclaration.tex
-<2_Preface/Travimadox.png, id=268, 536.0025pt x 221.82875pt>
+<2_Preface/Travimadox.png, id=252, 536.0025pt x 221.82875pt>
 File: 2_Preface/Travimadox.png Graphic file (type png)
 <use 2_Preface/Travimadox.png>
 Package pdftex.def Info: 2_Preface/Travimadox.png  used on input line 19.
@@ -10609,7 +10609,7 @@ runsystem(texcount -1 -sum -merge -q Thesis.tex output.bbl > Thesis-words.sum )
 \openout3 = `Thesis1.mw'.
 
 )
-(Thesis.gls
+(Thesis.gls) (Thesis.acr
 
 \openout3 = `Thesis1.mw'.
 
@@ -10628,18 +10628,11 @@ runsystem(texcount -1 -sum -merge -q Thesis.tex output.bbl > Thesis-words.sum )
 
 \openout3 = `Thesis1.mw'.
 
-) (Thesis.acr
-
-\openout3 = `Thesis1.mw'.
-
-[6] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
 
 
 \openout3 = `Thesis1.mw'.
 
-[7
+[6
 
 
 ] (Thesis1.mw)
@@ -10647,48 +10640,22 @@ runsystem(texcount -1 -sum -merge -q Thesis.tex output.bbl > Thesis-words.sum )
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
-
-
-
-\openout3 = `Thesis1.mw'.
-
-[8] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 ) (Thesis.sym)
 
 \openout3 = `Thesis1.mw'.
 
-[9] (Thesis1.mw)
+[7] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
  (Thesis.toc
 
 \openout3 = `Thesis1.mw'.
 
-[10
+[8
 
 ] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-
-
-\openout3 = `Thesis1.mw'.
-
-[11] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -10707,7 +10674,7 @@ runsystem(texcount -1 -sum -merge -q Thesis.tex output.bbl > Thesis-words.sum )
 
 \openout3 = `Thesis1.mw'.
 
-[12] (Thesis1.mw)
+[9] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
  (Thesis.lof)
@@ -10718,7 +10685,7 @@ runsystem(texcount -1 -sum -merge -q Thesis.tex output.bbl > Thesis-words.sum )
 
 \openout3 = `Thesis1.mw'.
 
-[13
+[10
 
 ] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
@@ -10751,21 +10718,9 @@ runsystem(texcount -1 -sum -merge -q Thesis.tex output.bbl > Thesis-words.sum )
 
 \openout3 = `Thesis1.mw'.
 
-[14
+[11
 
 ] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -10786,7 +10741,7 @@ runsystem(texcount -1 -sum -merge -q Thesis.tex output.bbl > Thesis-words.sum )
 
 \openout3 = `Thesis1.mw'.
 
-[15
+[12
 
 
 ] (Thesis1.mw)
@@ -10805,48 +10760,36 @@ pdfTeX warning (ext4): destination with the same identifier (name{glo:Anscombe\
 040transform}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7 ...tentrycounter[]{page}\glsnumberformat{15}}}
+l.5 ...etentrycounter[]{page}\glsnumberformat{9}}}
                                                   \glsgroupskip
 pdfTeX warning (ext4): destination with the same identifier (name{glo:DICOM}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 ...entrycounter[]{page}\glsnumberformat{35}}}
-                                                  \glsgroupskip
-pdfTeX warning (ext4): destination with the same identifier (name{glo:FBPconvNe
-t}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.15 ...entrycounter[]{page}\glsnumberformat{20}}}
-                                                  %
-pdfTeX warning (ext4): destination with the same identifier (name{glo:FBPtransN
-et}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.17 ...entrycounter[]{page}\glsnumberformat{20}}}
+l.9 ...ter[]{page}\glsnumberformat{27\delimN 28}}}
                                                   \glsgroupskip
 pdfTeX warning (ext4): destination with the same identifier (name{glo:goldenhou
 r}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 ...tentrycounter[]{page}\glsnumberformat{1}}}
+l.12 ...tentrycounter[]{page}\glsnumberformat{1}}}
                                                   \glsgroupskip
 pdfTeX warning (ext4): destination with the same identifier (name{glo:Staircase
 \040effect}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.23 ...entrycounter[]{page}\glsnumberformat{10}}}
+l.15 ...entrycounter[]{page}\glsnumberformat{10}}}
                                                   \glsgroupskip
 pdfTeX warning (ext4): destination with the same identifier (name{glo:U-Net}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...entrycounter[]{page}\glsnumberformat{33}}}
-                                                  \glsgroupskip
+l.20 ...er[]{page}\glsnumberformat{18\delimN 19}}}
+                                                  %)
 
 \openout3 = `Thesis1.mw'.
 
-[16
+[13
 
 
 
@@ -10863,19 +10806,6 @@ l.29 ...entrycounter[]{page}\glsnumberformat{33}}}
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{glo:Yaroslavs
-ky\040filter}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.32 ...entrycounter[]{page}\glsnumberformat{16}}}
-                                                  %)
-
-\openout3 = `Thesis1.mw'.
-
-[17] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 \openout2 = `3_Chapters/1_Chapter_Introduction/Introduction.aux'.
@@ -11059,7 +10989,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout3 = `Thesis1.mw'.
 
 <3_Chapters//2_Chapter_LiteratureReview//Figures/PoissonNoise Prodcution.png, i
-d=806, 631.60968pt x 423.08063pt>
+d=651, 631.60968pt x 423.08063pt>
 File: 3_Chapters//2_Chapter_LiteratureReview//Figures/PoissonNoise Prodcution.p
 ng Graphic file (type png)
 <use 3_Chapters//2_Chapter_LiteratureReview//Figures/PoissonNoise Prodcution.pn
@@ -11188,36 +11118,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--290
-[]|[][][]\OT1/cmr/m/n/10 Richardson-Lucy al-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--290
-\OT1/cmr/m/n/10 go-rithm (R-L)[][] and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
-[]|[][][]\OT1/cmr/m/n/10 Modified Rudin-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
-\OT1/cmr/m/n/10 Osher-Fatemi model
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 293--293
-\OT1/cmr/m/n/10 (MROF)[][] (Triet et
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 299--299
-[]|\OT1/cmr/m/n/10 Enhanced [][][]ATV[][] (Liu
- []
-
+<3_Chapters//2_Chapter_LiteratureReview//Figures/ClassicalFlowchart.png, id=774
+, 860.013pt x 480.5955pt>
+File: 3_Chapters//2_Chapter_LiteratureReview//Figures/ClassicalFlowchart.png Gr
+aphic file (type png)
+<use 3_Chapters//2_Chapter_LiteratureReview//Figures/ClassicalFlowchart.png>
+Package pdftex.def Info: 3_Chapters//2_Chapter_LiteratureReview//Figures/Classi
+calFlowchart.png  used on input line 268.
+(pdftex.def)             Requested size: 435.32422pt x 243.26714pt.
 
 
 
@@ -11230,55 +11138,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[10] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
+[10 <./3_Chapters//2_Chapter_LiteratureReview//Figures/ClassicalFlowchart.png>]
+(Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -11310,14 +11171,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout3 = `Thesis1.mw'.
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 397--397
-[]|\OT1/cmr/m/n/10 Modified [][][]NLM[][] to in-cor-po-rate
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
-[]|\OT1/cmr/m/n/10 Implemented [][][]Fast Non-Local
- []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -11330,62 +11183,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout3 = `Thesis1.mw'.
 
 [11] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -11479,70 +11276,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
+\openout3 = `Thesis1.mw'.
 
-Underfull \hbox (badness 7221) in paragraph at lines 476--476
-[]|\OT1/cmr/m/n/10 Thierry et al.
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+
+Overfull \hbox (41.86494pt too wide) in paragraph at lines 313--317
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--476
-[]|\OT1/cmr/m/n/10 Handles Pois-son
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--478
-[]|\OT1/cmr/m/n/10 Cannot han-dle
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--479
-[]|\OT1/cmr/m/n/10 Timmermann
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--479
-[]|\OT1/cmr/m/n/10 Denoises photon-
- []
-
-
-Underfull \hbox (badness 8075) in paragraph at lines 482--482
-[]|[][][]\OT1/cmr/m/n/10 multiscale vari-ance sta-bi-liz-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 482--482
-[]|\OT1/cmr/m/n/10 Denoises photon-
- []
-
-
-Underfull \hbox (badness 6927) in paragraph at lines 485--485
-\OT1/cmr/m/n/10 com-po-si-tion us-ing Daubechies
- []
-
-
-Underfull \hbox (badness 3333) in paragraph at lines 485--485
-\OT1/cmr/m/n/10 in pre-serv-ing edges,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
-[]|[][][]\OT1/cmr/m/n/10 DTCWT[][]: Dual-tree com-plex
- []
-
-
-Underfull \hbox (badness 2846) in paragraph at lines 491--491
-[]|\OT1/cmr/m/n/10 Better than wavelet
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
-\OT1/cmr/m/n/10 trans-form fil-ters in
- []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 491--491
-\OT1/cmr/m/n/10 Pois-son noise re-duc-
- []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -11585,26 +11332,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
+<3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg, id=871, 903.375pt x 677.5
+3125pt>
+File: 3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg Graphic file (type jp
+g)
+<use 3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg>
+Package pdftex.def Info: 3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg  u
+sed on input line 351.
+(pdftex.def)             Requested size: 338.58632pt x 253.9392pt.
 
 
 
@@ -11617,275 +11352,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[14] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--559
-[]|\OT1/cmr/bx/n/10 Hybrid Fil-ter
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 562--562
-[]|\OT1/cmr/m/n/10 Non-local [][][]Prin-ci-pal
- []
-
-
-Underfull \hbox (badness 4819) in paragraph at lines 562--562
-\OT1/cmr/m/n/10 Com-po-nent Anal-y-sis
- []
-
-
-Underfull \hbox (badness 5274) in paragraph at lines 562--564
-[]|\OT1/cmr/m/n/10 Increased ex-e-cu-tion time
- []
-
-
-Underfull \hbox (badness 5652) in paragraph at lines 562--564
-\OT1/cmr/m/n/10 due to it-er-a-tive na-ture;
- []
-
-
-Underfull \hbox (badness 4621) in paragraph at lines 562--564
-\OT1/cmr/m/n/10 strug-gles with noise de-
- []
-
-
-Underfull \hbox (badness 1237) in paragraph at lines 565--565
-[]|[][][]\OT1/cmr/m/n/10 PCA[][] com-bined with
- []
-
-
-Underfull \hbox (badness 3199) in paragraph at lines 568--568
-[]|[][][]\OT1/cmr/m/n/10 Hybrid Non-iterative
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 568--568
-\OT1/cmr/m/n/10 Pois-son Model
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 568--568
-\OT1/cmr/m/n/10 (HNIPM)[][] trained
- []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 568--568
-\OT1/cmr/m/n/10 on [][][]Anscombe trans-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 568--568
-[]|\OT1/cmr/m/n/10 Removes Pois-son
- []
-
-
-Underfull \hbox (badness 4686) in paragraph at lines 571--571
-[]|[][][]\OT1/cmr/m/n/10 Anscombe trans-form[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
-\OT1/cmr/m/n/10 with Curvelet and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 571--571
-\OT1/cmr/m/n/10 most wavelet-based
- []
-
-
-Underfull \hbox (badness 5578) in paragraph at lines 571--573
-[]|\OT1/cmr/m/n/10 Execution time may be
- []
-
-
-Underfull \hbox (badness 6859) in paragraph at lines 574--574
-[]|\OT1/cmr/m/n/10 Wavelet fil-ter com-
- []
-
-
-Underfull \hbox (badness 2961) in paragraph at lines 574--574
-[]|\OT1/cmr/m/n/10 Preserves im-age de-
- []
-
-
-Underfull \hbox (badness 4266) in paragraph at lines 574--574
-\OT1/cmr/m/n/10 tails while re-duc-ing
- []
-
-
-Underfull \hbox (badness 1946) in paragraph at lines 574--576
-[]|\OT1/cmr/m/n/10 Tested only on Gaus-sian
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-[]|\OT1/cmr/m/n/10 Non-local adap-tive
- []
-
-
-Underfull \hbox (badness 4886) in paragraph at lines 577--577
-\OT1/cmr/m/n/10 non-para-met-ric fil-ter-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-[]|\OT1/cmr/m/n/10 Similar per-for-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
-\OT1/cmr/m/n/10 mance to [][][]NLM[][]
- []
-
-
-Underfull \hbox (badness 1521) in paragraph at lines 577--579
-[]|\OT1/cmr/m/n/10 Limited test-ing on med-i-
- []
-
-
-Underfull \hbox (badness 1253) in paragraph at lines 580--580
-\OT1/cmr/m/n/10 fil-ter; re-duces quan-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--583
-[]|\OT1/cmr/m/n/10 Effectively re-duces
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--583
-\OT1/cmr/m/n/10 noise with-out ar-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--583
-\OT1/cmr/m/n/10 ti-facts; good edge
- []
-
-
-Underfull \hbox (badness 3260) in paragraph at lines 586--586
-[]|\OT1/cmr/m/n/10 Less ex-e-cu-tion time
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 589--589
-[]|\OT1/cmr/m/n/10 Bi-orthogonal Haar
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 589--589
-\OT1/cmr/m/n/10 wavelets with
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 589--589
-\OT1/cmr/m/n/10 BayesShrink thresh-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 589--589
-\OT1/cmr/m/n/10 old-ing and [][][]In-de-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 589--589
-\OT1/cmr/m/n/10 pen-dent Com-po-nent
- []
-
-
-Underfull \hbox (badness 2486) in paragraph at lines 592--592
-\OT1/cmr/m/n/10 ing non-local means
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 592--592
-[]|\OT1/cmr/m/n/10 Encouraging re-sults
- []
-
-
-Underfull \hbox (badness 6445) in paragraph at lines 592--592
-\OT1/cmr/m/n/10 with Pois-son noise;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 592--592
-\OT1/cmr/m/n/10 wavelet-based meth-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-\openout3 = `Thesis1.mw'.
-
-[15] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
+[14 <./3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg>] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -11940,7 +11407,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[16] (Thesis1.mw)
+[15] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -11962,6 +11429,84 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+<3_Chapters//3_Chapter_Methodology//Figures/noise2noise_model.png, id=919, 2289
+.55376pt x 5944.2075pt>
+File: 3_Chapters//3_Chapter_Methodology//Figures/noise2noise_model.png Graphic 
+file (type png)
+<use 3_Chapters//3_Chapter_Methodology//Figures/noise2noise_model.png>
+Package pdftex.def Info: 3_Chapters//3_Chapter_Methodology//Figures/noise2noise
+_model.png  used on input line 393.
+(pdftex.def)             Requested size: 120.92421pt x 313.91681pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+\openout3 = `Thesis1.mw'.
+
+[16 <./3_Chapters//3_Chapter_Methodology//Figures/noise2noise_model.png>]
+(Thesis1.mw)
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+<3_Chapters//3_Chapter_Methodology//Figures/blindspot.png, id=948, 163.812pt x 
+202.95825pt>
+File: 3_Chapters//3_Chapter_Methodology//Figures/blindspot.png Graphic file (ty
+pe png)
+<use 3_Chapters//3_Chapter_Methodology//Figures/blindspot.png>
+Package pdftex.def Info: 3_Chapters//3_Chapter_Methodology//Figures/blindspot.p
+ng  used on input line 420.
+(pdftex.def)             Requested size: 145.11053pt x 179.80229pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Command \textquoteleft invalid in math mode on input line 432.
+
+
+LaTeX Warning: Command \textquoteleft invalid in math mode on input line 432.
 
 
 
@@ -12014,303 +11559,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
+<3_Chapters//3_Chapter_Methodology//Figures/noise2void_model.png, id=964, 2289.
+55376pt x 5944.2075pt>
+File: 3_Chapters//3_Chapter_Methodology//Figures/noise2void_model.png Graphic f
+ile (type png)
+<use 3_Chapters//3_Chapter_Methodology//Figures/noise2void_model.png>
+Package pdftex.def Info: 3_Chapters//3_Chapter_Methodology//Figures/noise2void_
+model.png  used on input line 445.
+(pdftex.def)             Requested size: 120.92421pt x 313.91681pt.
 
-\openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-[]|[][][]\OT1/cmr/m/n/10 denoising con-vo-lu-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-\OT1/cmr/m/n/10 (DnCNN)[][]: Neu-ral
- []
-
-
-Underfull \hbox (badness 2573) in paragraph at lines 674--674
-\OT1/cmr/m/n/10 (C) as the sum of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-[]|\OT1/cmr/m/n/10 Outperforms [][][]BM3D[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 674--674
-\OT1/cmr/m/n/10 norm min-i-miza-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
-\OT1/cmr/m/n/10 us-ing model-based
- []
-
-
-Underfull \hbox (badness 6268) in paragraph at lines 677--677
-\OT1/cmr/m/n/10 driven nor-mal-i-sa-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 677--677
-[]|\OT1/cmr/m/n/10 Outperforms [][][]BM3D[][]
- []
-
-
-Underfull \hbox (badness 2384) in paragraph at lines 677--677
-\OT1/cmr/m/n/10 vi-su-ally su-pe-rior re-
- []
-
-
-Underfull \hbox (badness 6625) in paragraph at lines 680--680
-[]|\OT1/cmr/m/n/10 Custom 2-D [][][]U-Net[][]
- []
-
-
-Underfull \hbox (badness 5908) in paragraph at lines 680--680
-[][][]\OT1/cmr/m/n/10 CNN[][] for quick it-
- []
-
-
-Underfull \hbox (badness 2096) in paragraph at lines 680--680
-\OT1/cmr/m/n/10 de-com-po-si-tion across
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 680--680
-\OT1/cmr/m/n/10 it-er-a-tive re-con-struc-
- []
-
-
-Underfull \hbox (badness 3690) in paragraph at lines 680--680
-\OT1/cmr/m/n/10 tion; higher spa-tial
- []
-
-
-Underfull \hbox (badness 8019) in paragraph at lines 680--682
-\OT1/cmr/m/n/10 high com-pu-ta-tional re-sources;
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-[]|[][][]\OT1/cmr/m/n/10 CNN[][] model us-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-[][][]\OT1/cmr/m/n/10 U-Net[][] for ultra-
- []
-
-
-Underfull \hbox (badness 6348) in paragraph at lines 683--683
-\OT1/cmr/m/n/10 high-resolution [][][]PCD[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-[][][]\OT1/cmr/m/n/10 Com-puted To-mog-
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 683--683
-\OT1/cmr/m/n/10 ra-phy (CT)[][], trained
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 683--683
-\OT1/cmr/m/n/10 with image-based
- []
-
-
-Underfull \hbox (badness 6141) in paragraph at lines 683--683
-[]|\OT1/cmr/m/n/10 Retains fine de-tails
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-[]|[][][]\OT1/cmr/m/n/10 prior knowledge-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\OT1/cmr/m/n/10 aware it-er-a-tive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\OT1/cmr/m/n/10 de-nois-ing neu-ral
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\OT1/cmr/m/n/10 net-work (PKAID-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\OT1/cmr/m/n/10 Net)[][] us-ing prior
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\OT1/cmr/m/n/10 knowledge-aware
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\OT1/cmr/m/n/10 it-er-a-tive de-nois-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\OT1/cmr/m/n/10 lower-noise [][][]Vir-tual
- []
-
-
-Underfull \hbox (badness 2495) in paragraph at lines 686--686
-\OT1/cmr/m/n/10 (VMI)[][] for im-proved
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
-[]|[][][]\OT1/cmr/m/n/10 CNN[][] model for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
-\OT1/cmr/m/n/10 de-tect-ing mul-ti-ple
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 692--692
-[]|\OT1/cmr/m/n/10 Uses reg-u-lar-i-sa-tion
- []
-
-
-Underfull \hbox (badness 1939) in paragraph at lines 692--692
-\OT1/cmr/m/n/10 strat-egy to sup-press
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
-[]|\OT1/cmr/m/n/10 Third-Order Ten-sor
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
-[][][]\OT1/cmr/m/n/10 TV[][] reg-u-lar-i-sa-tion
- []
-
-
-Underfull \hbox (badness 1845) in paragraph at lines 695--695
-[]|\OT1/cmr/m/n/10 Improved noise sup-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 698--698
-[]|[][][]\OT1/cmr/m/n/10 FBPTransNet[][] that
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 698--698
-\OT1/cmr/m/n/10 with Trans-former
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 698--698
-[][][]\OT1/cmr/m/n/10 FBP-con-vNet[][]; clearer
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-\openout3 = `Thesis1.mw'.
-
-[18] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
 
 
 
@@ -12323,7 +11583,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[19] (Thesis1.mw)
+[18 <./3_Chapters//3_Chapter_Methodology//Figures/blindspot.png>] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -12338,12 +11598,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
-
+[19 <./3_Chapters//3_Chapter_Methodology//Figures/noise2void_model.png>]
+(Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -12387,26 +11655,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout3 = `Thesis1.mw'.
 
 [20] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -12519,7 +11767,7 @@ This phase in-volved con-fig-ur-ing the LODOX$[]$ Statscan$[]$
 
 \openout3 = `Thesis1.mw'.
 
-<3_Chapters//3_Chapter_Methodology//Figures/Waterfall.png, id=1319, 539.616pt x
+<3_Chapters//3_Chapter_Methodology//Figures/Waterfall.png, id=1028, 539.616pt x
  342.078pt>
 File: 3_Chapters//3_Chapter_Methodology//Figures/Waterfall.png Graphic file (ty
 pe png)
@@ -12747,7 +11995,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-<3_Chapters//3_Chapter_Methodology//Figures/Filteruncheck.png, id=1375, 281.853
+<3_Chapters//3_Chapter_Methodology//Figures/Filteruncheck.png, id=1084, 281.853
 pt x 284.262pt>
 File: 3_Chapters//3_Chapter_Methodology//Figures/Filteruncheck.png Graphic file
  (type png)
@@ -12755,7 +12003,7 @@ File: 3_Chapters//3_Chapter_Methodology//Figures/Filteruncheck.png Graphic file
 Package pdftex.def Info: 3_Chapters//3_Chapter_Methodology//Figures/Filterunche
 ck.png  used on input line 164.
 (pdftex.def)             Requested size: 309.56569pt x 312.2207pt.
-<3_Chapters//3_Chapter_Methodology//Figures/Training Images grid.png, id=1377, 
+<3_Chapters//3_Chapter_Methodology//Figures/Training Images grid.png, id=1086, 
 574.5465pt x 560.0925pt>
 File: 3_Chapters//3_Chapter_Methodology//Figures/Training Images grid.png Graph
 ic file (type png)
@@ -12778,16 +12026,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [26 <./3_Chapters//3_Chapter_Methodology//Figures/Filteruncheck.png>]
 (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
-
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 181.
-
-
-Overfull \hbox (41.86494pt too wide) in paragraph at lines 191--195
-[][] 
- []
 
 
 
@@ -12817,49 +12055,65 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-<3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg, id=1412, 903.375pt x 677.
-53125pt>
-File: 3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg Graphic file (type jp
-g)
-<use 3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg>
-Package pdftex.def Info: 3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg  u
-sed on input line 229.
-(pdftex.def)             Requested size: 338.58632pt x 253.9392pt.
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
+[]|\OT1/cmr/m/n/10.95 Deep Learn-ing
+ []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 3646) in paragraph at lines 204--204
+\OT1/cmr/m/n/10.95 deep learn-ing (Ten-sor-Flow,
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 235.
+Underfull \hbox (badness 1939) in paragraph at lines 205--206
+\OT1/cmr/m/n/10.95 cess-ing and anal-y-sis (Deep
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 207--207
+[]|\OT1/cmr/m/n/10.95 Strong sup-port for med-i-
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 210--210
+[]|\OT1/cmr/m/n/10.95 A large, ac-tive com-mu-nity
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 210--210
+\OT1/cmr/m/n/10.95 with vast re-sources makes
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 211--212
+\OT1/cmr/m/n/10.95 a smaller com-mu-nity com-
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 211--212
+\OT1/cmr/m/n/10.95 pared to Python for deep
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]|\OT1/cmr/m/n/10.95 Integration and
+ []
+
+
+Underfull \hbox (badness 4144) in paragraph at lines 216--216
+[]|\OT1/cmr/m/n/10.95 Integrates well with other
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+[]|\OT1/cmr/m/n/10.95 Excellent in-te-gra-tion with
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 217--218
+\OT1/cmr/m/n/10.95 hard-ware and other Math-
+ []
 
 
 
@@ -12896,14 +12150,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
 
 
 
@@ -12916,7 +12162,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[29 <./3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg>] (Thesis1.mw)
+[29] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -12939,21 +12185,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-<3_Chapters//3_Chapter_Methodology//Figures/noise2noise_model.png, id=1446, 228
-9.55376pt x 5944.2075pt>
-File: 3_Chapters//3_Chapter_Methodology//Figures/noise2noise_model.png Graphic 
-file (type png)
-<use 3_Chapters//3_Chapter_Methodology//Figures/noise2noise_model.png>
-Package pdftex.def Info: 3_Chapters//3_Chapter_Methodology//Figures/noise2noise
-_model.png  used on input line 271.
-(pdftex.def)             Requested size: 241.84843pt x 627.83362pt.
+\openout3 = `Thesis1.mw'.
 
+\openout3 = `Thesis1.mw'.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+\openout3 = `Thesis1.mw'.
 
+\openout3 = `Thesis1.mw'.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 277.
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
+
+\openout3 = `Thesis1.mw'.
 
 
 
@@ -12982,359 +12244,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-\openout3 = `Thesis1.mw'.
-
-[31 <./3_Chapters//3_Chapter_Methodology//Figures/noise2noise_model.png>]
-(Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-<3_Chapters//3_Chapter_Methodology//Figures/blindspot.png, id=1469, 163.812pt x
- 202.95825pt>
-File: 3_Chapters//3_Chapter_Methodology//Figures/blindspot.png Graphic file (ty
-pe png)
-<use 3_Chapters//3_Chapter_Methodology//Figures/blindspot.png>
-Package pdftex.def Info: 3_Chapters//3_Chapter_Methodology//Figures/blindspot.p
-ng  used on input line 296.
-(pdftex.def)             Requested size: 145.11053pt x 179.80229pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-\openout3 = `Thesis1.mw'.
-
-[32 <./3_Chapters//3_Chapter_Methodology//Figures/blindspot.png>] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-
-
-LaTeX Warning: Command \textquoteleft invalid in math mode on input line 308.
-
-
-LaTeX Warning: Command \textquoteleft invalid in math mode on input line 308.
-
-<3_Chapters//3_Chapter_Methodology//Figures/noise2void_model.png, id=1484, 2289
-.55376pt x 5944.2075pt>
-File: 3_Chapters//3_Chapter_Methodology//Figures/noise2void_model.png Graphic f
-ile (type png)
-<use 3_Chapters//3_Chapter_Methodology//Figures/noise2void_model.png>
-Package pdftex.def Info: 3_Chapters//3_Chapter_Methodology//Figures/noise2void_
-model.png  used on input line 321.
-(pdftex.def)             Requested size: 241.84843pt x 627.83362pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-\openout3 = `Thesis1.mw'.
-
-[33] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-\openout3 = `Thesis1.mw'.
-
-[34 <./3_Chapters//3_Chapter_Methodology//Figures/noise2void_model.png>]
-(Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--351
-[]|\OT1/cmr/m/n/10.95 Deep Learn-ing
- []
-
-
-Underfull \hbox (badness 3646) in paragraph at lines 352--352
-\OT1/cmr/m/n/10.95 deep learn-ing (Ten-sor-Flow,
- []
-
-
-Underfull \hbox (badness 1939) in paragraph at lines 353--354
-\OT1/cmr/m/n/10.95 cess-ing and anal-y-sis (Deep
- []
-
-
-Underfull \hbox (badness 7291) in paragraph at lines 355--355
-[]|\OT1/cmr/m/n/10.95 Strong sup-port for med-i-
- []
-
-
-Underfull \hbox (badness 1852) in paragraph at lines 358--358
-[]|\OT1/cmr/m/n/10.95 A large, ac-tive com-mu-nity
- []
-
-
-Underfull \hbox (badness 3646) in paragraph at lines 358--358
-\OT1/cmr/m/n/10.95 with vast re-sources makes
- []
-
-
-Underfull \hbox (badness 2189) in paragraph at lines 359--360
-\OT1/cmr/m/n/10.95 a smaller com-mu-nity com-
- []
-
-
-Underfull \hbox (badness 2376) in paragraph at lines 359--360
-\OT1/cmr/m/n/10.95 pared to Python for deep
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--363
-[]|\OT1/cmr/m/n/10.95 Integration and
- []
-
-
-Underfull \hbox (badness 4144) in paragraph at lines 364--364
-[]|\OT1/cmr/m/n/10.95 Integrates well with other
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
-[]|\OT1/cmr/m/n/10.95 Excellent in-te-gra-tion with
- []
-
-
-Underfull \hbox (badness 2065) in paragraph at lines 365--366
-\OT1/cmr/m/n/10.95 hard-ware and other Math-
- []
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-\openout3 = `Thesis1.mw'.
-
-[35] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-\openout3 = `Thesis1.mw'.
-
-[36] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-\openout3 = `Thesis1.mw'.
-
-[37] (Thesis1.mw)
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
 )
 
 
@@ -13347,7 +12256,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[38] (Thesis1.mw)
+[31] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 \openout3 = `Thesis1.mw'.
@@ -13378,7 +12287,7 @@ Chapter 4.
 
 \openout3 = `Thesis1.mw'.
 
-[39
+[32
 
 
 
@@ -13402,7 +12311,7 @@ Chapter 5.
 
 \openout3 = `Thesis1.mw'.
 
-[40
+[33
 
 
 
@@ -13426,7 +12335,7 @@ Chapter 6.
 
 \openout3 = `Thesis1.mw'.
 
-[41
+[34
 
 
 
@@ -13468,7 +12377,7 @@ Chapter 6.
 
 \openout3 = `Thesis1.mw'.
 
-[42
+[35
 
 
 
@@ -13529,7 +12438,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[43] (Thesis1.mw)
+[36] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 
@@ -13575,7 +12484,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[44] (Thesis1.mw)
+[37] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 
@@ -13627,7 +12536,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[45] (Thesis1.mw)
+[38] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 
@@ -13667,7 +12576,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[46] (Thesis1.mw)
+[39] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 
@@ -13689,7 +12598,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[47] (Thesis1.mw)
+[40] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 
@@ -13717,7 +12626,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[48] (Thesis1.mw)
+[41] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
 
@@ -13744,7 +12653,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 \openout3 = `Thesis1.mw'.
 
-[49] (Thesis1.mw)
+[42] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
 
  (5_Appendices/Appendix_A/Appendix_A.tex
@@ -13753,7 +12662,7 @@ Appendix A.
 
 \openout3 = `Thesis1.mw'.
 
-[50
+[43
 
 
 ] (Thesis1.mw)
@@ -13769,7 +12678,7 @@ Appendix B.
 
 \openout3 = `Thesis1.mw'.
 
-[51
+[44
 
 ] (Thesis1.mw)
 \openout3 = `Thesis1.mw'.
@@ -14070,38 +12979,6 @@ Appendix B.
 
 \openout3 = `Thesis1.mw'.
 
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
-\openout3 = `Thesis1.mw'.
-
 )
 (3_Chapters/4_Chapter_Design/Design.aux
 \openout3 = `Thesis1.mw'.
@@ -14193,7 +13070,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 \openout3 = `Thesis.out'.
 
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CDAF218703279ED262A40C07266EAFC0;8373.
+(rerunfilecheck)             Checksum: 0C934A73C22045B7940E20A68907F4EC;7918.
 \openout3 = `Thesis.glo'.
 
 \openout3 = `Thesis.acn'.
@@ -14212,11 +13089,11 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 
  ) 
 Here is how much of TeX's memory you used:
- 59265 strings out of 473899
- 1261681 string characters out of 5726972
- 1952960 words of memory out of 5000000
- 72896 multiletter control sequences out of 15000+600000
- 576593 words of font info for 108 fonts, out of 8000000 for 9000
+ 58707 strings out of 473899
+ 1253780 string characters out of 5726972
+ 1945960 words of memory out of 5000000
+ 72784 multiletter control sequences out of 15000+600000
+ 577212 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,16n,136p,2405b,1214s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx0
@@ -14244,9 +13121,9 @@ ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/User/AppData/Local
 ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Us
 er/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 >
-Output written on Thesis.pdf (69 pages, 1836111 bytes).
+Output written on Thesis.pdf (58 pages, 1881216 bytes).
 PDF statistics:
- 1837 PDF objects out of 2073 (max. 8388607)
- 362 named destinations out of 1000 (max. 500000)
- 535 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1459 PDF objects out of 1728 (max. 8388607)
+ 320 named destinations out of 1000 (max. 500000)
+ 508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

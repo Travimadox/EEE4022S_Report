@@ -261,346 +261,31 @@ However, denoising X-ray images presents several critical challenges discussed b
 Over the years, various algorithms have been proposed to address these four challenges. These algorithms are generally classified into three broad categories: Classical Filters, Hybrid Filters and Deep learning methods \cite{juneja_denoising_2024}, \cite{kirti_poisson_2017}. The following section will analyse each category in detail, exploring their advantages, disadvantages, and suitability for handling Poisson noise in the LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered}.
 
 \subsection{Classical Filters}
-This subsection briefly discusses the classical \gls{DSP} filters implemented to combat noise in X-ray Images, broadly classified into spatial and transform filters.  Spatial filters are further categorised into linear and non-linear filters. Linear filters are easy to implement as they apply non-discriminate denoising to all the pixels without prior categorisation \cite{khan_new_2016} and thus are not good with signal-dependent noise leading to artifacts and blurring \cite{juneja_denoising_2024}, \cite{mandic_denoising_2018}. In contrast, non-linear filters first detect noisy pixels and then replace them selectively, making them more effective for denoising \cite{khan_new_2016}.
+This subsection briefly discusses the classical \gls{DSP} filters implemented to combat noise in X-ray Images, broadly classified into spatial and transform filters as shown in Figure \ref{fig:classicflo} below.  Spatial filters are further categorised into linear and non-linear filters. Linear filters are easy to implement as they apply non-discriminate denoising to all the pixels without prior categorisation \cite{khan_new_2016} and thus are not good with signal-dependent noise leading to artifacts and blurring \cite{juneja_denoising_2024}, \cite{mandic_denoising_2018}. In contrast, non-linear filters first detect noisy pixels and then replace them selectively, making them more effective for denoising \cite{khan_new_2016}. Unlike spatial filters, transform domain filters operate by converting the image into an alternative representation, such as the Wavelet or Fourier domain, where denoising is performed, after which the image is transformed back to the spatial domain using an inverse transform.
 
-\textbf{Spatial Domain Filters} \\
-This subsection discusses key spatial domain filters currently used for X-ray image denoising. A detailed analysis of these filters, outlining their strengths, weaknesses, and applicability to LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images, is discussed below. 
-
-\gls{ADF} is a spatial diffusion filter that adaptively smooths images, preserving important anatomical structures by controlling diffusion across edges \cite{chandra_analysis_2020}
-. Although \gls{ADF} effectively preserves micro-texture and edges, its performance degrades with larger mask sizes, reducing its ability to handle quantum noise \cite{chandra_analysis_2020}
-. Additionally, \gls{ADF} is slow, and its effectiveness depends heavily on careful parameter selection, and when not done correctly it tends to remove some image details degrading image quality \cite{juneja_denoising_2024}, \cite{chandra_analysis_2020}
-. Consequently, this makes \gls{ADF} less suitable for the high levels of quantum noise in LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images.
-
-Despite \gls{ADF}'s ability to maintain micro-texture and edges, its shortcomings in dealing with quantum noise in LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images make exploring alternative techniques, such as the \gls{BF}, necessary. \gls{BF} is a non-iterative filter that merges grey levels of pixels based on their spatial and photometric similarity, preserving sharp structural patterns while suppressing noise \cite{juneja_denoising_2024}, \cite{chandra_analysis_2020}. However, \gls{BF} is prone to gradient reversal artifacts near edges, leading to a loss of fine detail \cite{juneja_denoising_2024}, \cite{chandra_analysis_2020}. Kirti et al. \cite{thanh_review_2019},\cite{thakur_poisson_2016} attempted to address this by developing an enhanced version, \gls{PRBF}, adding the capability to remove Poisson Noise, although it still struggles with photon-limited images. Given that LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images are photon-limited, the \gls{BF} may not be ideal for denoising.
-
-Since \gls{BF} struggles with photon-limited images, exploring other filters that can effectively handle quantum noise, such as \gls{TV} filters, is necessary. \gls{TV} filter popularly known as \gls{ROF} was first developed by Rudin et al. \cite{rudin_nonlinear_1992} and is an edge-preserving algorithm designed to handle discontinuities in anatomical details \cite{khan_new_2016}, \cite{rodrigues_denoising_2008}. Studies show that \gls{TV} is effective in denoising Poisson and Gaussian noise \cite{rodrigues_denoising_2008}; however, it struggles to preserve edges, produces the \gls{Staircase effect} \cite{rodrigues_denoising_2008} and has long processing times \cite{lee_x-ray_2018}. Over time researchers have sought to address these challenges by improving the initial version of the \gls{TV} algorithm.  Some of these adaptions are summarised in Table \ref{tab:TV} below:
-
-\begin{center}
-\small
-\setlength{\arrayrulewidth}{1mm} % Thicker outer border
-\setlength{\tabcolsep}{6pt} % Increase cell padding
-\renewcommand{\arraystretch}{1.5} % Increase row height for readability
-
-\begin{longtable}{ p{0.2\columnwidth}  p{0.3\columnwidth}  p{0.4\columnwidth} }
-%\hline
-\rowcolor[HTML]{D3D3D3} 
-\textbf{Algorithm} & \textbf{Description} & \textbf{Challenges} \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-\gls{R-L} and \gls{TV} (Dey et al.) \cite{dey_deconvolution_2004} & Combined \gls{R-L} and \gls{TV} to develop a Poisson-based denoising algorithm specifically suited for microscopy images. & Only Tailored for microscopy images \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-\gls{MROF} (Triet et al.) \cite{le_variational_2007} & An improved version of \gls{ROF} that can process Poisson noise. & Long execution times, Artificial artifacts, Cannot handle photon-limited images. \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-\gls{ATV} (Prasath) \cite{prasath_quantum_2017} & Developed to address artificial artifacts in \gls{MROF}. & Faces the same challenges as \gls{MROF}. \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Enhanced \gls{ATV} (Liu et al.) \cite{liu_poisson_2017} & Modified \gls{ATV} to denoise photon-limited images. & Long execution times. \\
-%\hline
-\caption{Summary of Adaptations to \gls{TV} Filters to addressing challenges in original \gls{TV} filter.}
-\label{tab:TV}
-
-\end{longtable}
-\end{center}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{3_Chapters//2_Chapter_LiteratureReview//Figures/ClassicalFlowchart.png}
+	\caption{Flowchart summarising the classical filters used in X-ray image denoising}
+	\label{fig:classicflo}
+\end{figure}
 
 
-\begin{comment}
-\begin{center}
-\small
-\begin{longtable}{| p{0.2\columnwidth} | p{0.3\columnwidth} | p{0.4\columnwidth} |}
-\hline
-\textbf{Algorithm} & \textbf{Description} & \textbf{Challenges} \\
-\hline
-\gls{R-L} and \gls{TV} (Dey et al.)\cite{dey_deconvolution_2004} & Combined \gls{R-L} and \gls{TV} to develop a Poisson-based denoising algorithm specifically suited for microscopy images. & 
-Only Tailored for microscopy images
- \\
-\hline
-\gls{MROF}(Triet et al.)\cite{le_variational_2007} & An improved version of \gls{ROF} that can process Poisson noise. & 
+Studies have shown that most classical filters struggle to handle photon-limited images. For instance, \gls{ADF} performance on photon-limited noise degrades with increasing mask size \cite{chandra_analysis_2020}, making it less suitable for the high levels of quantum noise in LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images. Although  \gls{BF} has shown potential in denoising high photon count images, it still struggles with photon-limited images  \cite{thanh_review_2019} in addition to being prone to gradient reversal artifacts near edges, leading to a loss of fine detail \cite{juneja_denoising_2024}, \cite{chandra_analysis_2020}. Given that LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images are photon-limited, the \gls{BF} may not be ideal for denoising. \gls{TV} is effective in denoising Poisson and Gaussian noise \cite{rodrigues_denoising_2008}; however, it struggles to preserve edges, produces the \gls{Staircase effect} \cite{rodrigues_denoising_2008} and has long processing times \cite{lee_x-ray_2018}.
 
+Gaussian filter struggles to denoise Photon limited as it is tailored for  Gaussian noise, leading to loss of image detail \cite{juneja_denoising_2024}, \cite{khan_new_2016}. Wiener filter attempts to address these shortcomings; however, it has only shown success in effectively reducing Gaussian, impulse and speckle noise whilst preserving the edges \cite{chandra_analysis_2020}, \cite{wang_noise_2008}. Additionally, it only provides a point estimate that gives optimal results under specific conditions, making it less effective in handling signal-dependent noises such as Poisson \cite{juneja_denoising_2024} making it not effective for denoising LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images which have high Poisson noise levels. 
 
-    Long execution times,
-    Artificial artifacts,
-    Cannot handle photon-limited images.
+\gls{NLM} and wavelet are the classical filters that have shown promise in denoising photon-lited images such as those of the LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered}. \gls{NLM} uses a non-local averaging technique that operates on all similar pixels, removing noise after exploring redundant information \cite{juneja_denoising_2024}, \cite{khan_new_2016}, \cite{rodrigues_denoising_2008}. Consequently, this leads to high detail preservation in images \cite{rodrigues_denoising_2008}. However, despite the excellent detail preservation, \gls{NLM} suffers from slow execution time due to the computational overhead arising from the complexity of evaluating the pixel weights \cite{juneja_denoising_2024},\cite{rodrigues_denoising_2008}. This limits its suitability for denoising LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images.
 
- \\
-\hline
-\gls{ATV} (Prasath)\cite{prasath_quantum_2017} & Developed to address artificial artifacts in \gls{MROF}. & 
-Faces the same challenges as \gls{MROF}.
- \\
-\hline
-Enhanced \gls{ATV} (Liu et al.) \cite{liu_poisson_2017} & Modified \gls{ATV} to denoise photon-limited images. & 
-Long execution times.
- \\
-\hline
-\caption{Summary of Adaptations to \gls{TV} Filters to addressing  challenges in original \gls{TV} filter.}
-\label{tab:TV}
+Primarily, wavelet filters operate by applying shrinkage or thresholding to wavelet coefficients, followed by image synthesis \cite{rodrigues_denoising_2008}.  The local definition of features allows wavelet filters to preserve minute edges and details in X-ray images \cite{juneja_denoising_2024}, \cite{rodrigues_denoising_2008}.  Notably, wavelet filters are associated with challenges of estimating an appropriate threshold and the tendency to introduce artifacts leading to smooth edges at times \cite{juneja_denoising_2024}, \cite{rodrigues_denoising_2008}. These challenges limit its suitability for denoising LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images.
 
-
-\end{longtable}
-
-\end{center}
-
- \gls{NLM} has emerged as an alternative to denoise photon-limited images to address the shortcomings of \gls{TV} filters. \gls{NLM} uses a non-local averaging technique that operates on all similar pixels, removing noise after exploring redundant information \cite{juneja_denoising_2024}, \cite{khan_new_2016}, \cite{rodrigues_denoising_2008}. Consequently, this leads to high detail preservation in images \cite{rodrigues_denoising_2008}. However, despite the high detail preservation, \gls{NLM} suffers from slow execution time due to the computational overhead arising from the complexity of evaluating the pixel weights \cite{juneja_denoising_2024},\cite{rodrigues_denoising_2008}. Various researchers have proposed solutions to address the challenges, as summarised in Table \ref{tab:NLM} below:
-
-
-
-\begin{center}
-\small
-
-\begin{longtable}{| p{0.2\columnwidth} | p{0.3\columnwidth} | p{0.4\columnwidth} |}
-\hline
-\textbf{Researcher(s)} & \textbf{Proposed Solution} & \textbf{Challenges Addressed} \\
-\hline
-Mahmoudi and Sapiro\cite{1542113} & Modified \gls{NLM} by adding Pre-selection of neighborhoods & Increased speed \\
-\hline
-Pierrick Coupe \cite{coupe_fast_2006} & Added parallel processing & Improved execution time \\
-\hline
-Deledalle et al. \cite{5653394} & Modified \gls{NLM} to incorporate Poisson noise statistics & Tailored for Poisson noise \\
-\hline
-Shim et al.\cite{shim_feasibility_2018} & Implemented \gls{FNLM} & Significant speed improvement i.e 3.7 times faster than \gls{TV} filter \\
-\hline
-Lee et al. \cite{lee_impact_2022} & Combined \gls{NLM} denoising algorithm with Aluminium additive hardware filters & Superior results in \gls{CNR}, \gls{COV}, \gls{NIQE}, and \gls{BRISQUE} \\
-\hline
-Lee \cite{lee_x-ray_2018} & \gls{FNLM} with acceleration function and Euclidean distance & Superior \gls{NNPS}, \gls{CNR}, and \gls{COV} values; fast processing time (0.17s) \\
-\hline
-
-\caption{Summary of Proposed Solutions to Address Challenges in \gls{NLM} Filter}
-\label{tab:NLM}
-\end{longtable}
-
-\end{center}
-
-\end{comment}
-
- \gls{NLM} has emerged as an alternative to denoise photon-limited images to address the shortcomings of \gls{TV} filters. \gls{NLM} uses a non-local averaging technique that operates on all similar pixels, removing noise after exploring redundant information \cite{juneja_denoising_2024}, \cite{khan_new_2016}, \cite{rodrigues_denoising_2008}. Consequently, this leads to high detail preservation in images \cite{rodrigues_denoising_2008}. However, despite the high detail preservation, \gls{NLM} suffers from slow execution time due to the computational overhead arising from the complexity of evaluating the pixel weights \cite{juneja_denoising_2024},\cite{rodrigues_denoising_2008}. Various researchers have proposed solutions to address the challenges, as summarised in Table \ref{tab:NLM} below:
-
-
-\begin{center}
-\small
-\setlength{\arrayrulewidth}{1mm} % Thicker outer border
-\setlength{\tabcolsep}{6pt} % Increase cell padding
-\renewcommand{\arraystretch}{1.5} % Increase row height for readability
-
-\begin{longtable}{ p{0.2\columnwidth}  p{0.3\columnwidth}  p{0.4\columnwidth} }
-%\hline
-\rowcolor[HTML]{D3D3D3} 
-\textbf{Researcher(s)} & \textbf{Proposed Solution} & \textbf{Challenges Addressed} \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Mahmoudi and Sapiro \cite{1542113} & Modified \gls{NLM} by adding Pre-selection of neighborhoods & Increased speed \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Pierrick Coupe \cite{coupe_fast_2006} & Added parallel processing & Improved execution time \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Deledalle et al. \cite{5653394} & Modified \gls{NLM} to incorporate Poisson noise statistics & Tailored for Poisson noise \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Shim et al. \cite{shim_feasibility_2018} & Implemented \gls{FNLM} & Significant speed improvement i.e 3.7 times faster than \gls{TV} filter \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Lee et al. \cite{lee_impact_2022} & Combined \gls{NLM} denoising algorithm with Aluminium additive hardware filters & Superior results in \gls{CNR}, \gls{COV}, \gls{NIQE}, and \gls{BRISQUE} \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Lee \cite{lee_x-ray_2018} & \gls{FNLM} with acceleration function and Euclidean distance & Superior \gls{NNPS}, \gls{CNR}, and \gls{COV} values; fast processing time (0.17s) \\
-%\hline
-\caption{Summary of Proposed Solutions to Address Challenges in \gls{NLM} Filter}
-\label{tab:NLM}
-
-\end{longtable}
-\end{center}
-
-%\newpage
-\gls{NLM} filters still suffer from slow execution due to computational complexity and require high-speed hardware to execute faster, thus limiting their suitability for denoising LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images. 
-
-%\newpage
-\textbf{Transform Domain Filters} \\
-This subsection details some transform domain filters used in X-ray image denoising. Unlike spatial filters, transform domain filters operate by converting the image into an alternative representation, such as the Wavelet or Fourier domain, where denoising is performed, after which the image is transformed back to the spatial domain using an inverse transform. A detailed analysis of these filters, outlining their strengths, weaknesses, and applicability to LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images, is discussed below. 
-
-Gaussian filter is the most widely used transform domain filter known for reducing edge blurring and computational efficiency; however, it loses a lot of image detail \cite{juneja_denoising_2024}
-, \cite{khan_new_2016}. Given that Gaussian filter works is tailored for Gaussian noise, it struggles to denoise Poisson noise prevalent in LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered}. Researchers have opted for other transform domain filters to denoise X-ray images to address these shortcomings. 
-
-One of the filters that has shown promise in improving the shortcomings of the Gaussian filter is the wiener filter. It is an \gls{MSE}-optimal stationary filter that balances noise smoothing and inverse filtering, using local image variance for adaptive smoothing \cite{juneja_denoising_2024}, \cite{chandra_analysis_2020}, \cite{noauthor_wiener_nodate}. Studies have shown that the wiener filter effectively reduces Gaussian impulse and speckle noise whilst preserving the edges \cite{chandra_analysis_2020}, \cite{wang_noise_2008}.  However, despite these advantages, it only provides a point estimate that gives optimal results under specific conditions, making it less effective in handling signal-dependent noises such as Poisson \cite{juneja_denoising_2024}. Additionally, it leads to blurry images due to the use of fixed kernel size \cite{chandra_analysis_2020}.
-
-Researchers have attempted to improve the Wiener filter to enhance its performance. For instance, Goreke \cite{goreke_novel_2023} modified a wiener filter by incorporating an \gls{FIR} filter with \gls{ASO} optimisation, demonstrating its superiority over \gls{NLM}, \gls{BF}, \gls{BM3D}, \gls{PURE-LET}, Bayes, and \gls{DTCWT} filters in terms of contrast index, entropy, sharpness, and computational efficiency. Additionally, Lahmiri \cite{lahmiri_iterative_2017} developed a multistep iterative Wiener filter where the denoised output from one step is the input to the next stage, stopping based on an energy condition and showed that it could denoise and restore the original texture in finite iterations. However, this approach was limited to Gaussian noise\cite{lahmiri_iterative_2017}, reducing its applicability to other noise types. Despite these improvements, the Wiener filter still struggles to handle Poisson noise, making it a less suitable option for LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images, which are predominantly degraded by Poisson noise.
-
-While the wiener filter preserves the image texture,  its limitations in handling quantum noise suggest that complementary methods, such as wavelet filters, are necessary for optimal denoising. Primarily, wavelet filters operate by applying shrinkage or thresholding to wavelet coefficients, followed by image synthesis \cite{rodrigues_denoising_2008}.  The local definition of features allows wavelet filters to preserve minute edges and details in X-ray images \cite{juneja_denoising_2024}, \cite{rodrigues_denoising_2008}.  Notably, wavelet filters are associated with challenges of estimating an appropriate threshold and the tendency to introduce artifacts leading to smooth edges at times \cite{juneja_denoising_2024}, \cite{rodrigues_denoising_2008}. To address these challenges associated with the wavelet filter, researchers have developed various variations, which are summarised in Table \ref{tab:wavelet} below:
-
-%Resing ahs to be done later, maybe consider using long table format
-
-\begin{comment}
-    \begin{center}
-\small
-%\fontsize{7}{8}\selectfont
-\begin{longtable}{| p{0.2\columnwidth} | p{0.3\columnwidth}  | p{0.2\columnwidth} | p{0.2\columnwidth} |}
-
-\hline
-\textbf{Researcher(s)} & \textbf{Method} \& \textbf{Description} & \textbf{Strengths} & \textbf{Limitations} \\
-\hline
-Thierry et al.  \cite{LUISIER2010415} & \gls{PURE-LET}:Based on the unnormalised Haar wavelet transform, the minimisation of unbiased \gls{MSE} estimate & Handles Poisson noise
-
-Competitive in denoising and computational complexity & Cannot handle photon-limited images \\
-\hline
-Timmermann and Nowak \cite{761328} & \gls{MMI} Model:A simple Bayesian intensity estimate procedure & Denoises photon-limited images & Highly complex \\
-\hline
-Zhang et al. \cite{4531116} & \gls{MS-VST}: Extension of \gls{Anscombe transform} combining wavelet, ridgelet, and curvelet & Denoises photon-limited images & Highly complex \\
-
-\hline
-Wang \cite{wang_noise_2008} & Adaptive Wavelet Wiener Filter: Pre-processing, three-wavelet decomposition using Daubechies wavelet (db5),  \gls{IBS} & Superior performance in preserving edges, enhancing image quality in low-dose X-ray and medical images & Highly complex \\
-\hline
-Kaur et al.\cite{1273218} & Wavelet-Based Statistical: Uses realistic distribution of wavelet coefficients & Better feature preservation in medical images & Highly complex \\
-\hline
-Du et al. \cite{6568145} & \gls{DTCWT}: Dual-tree complex wavelet transform & Better than wavelet transform filters in Poisson noise reduction in X-ray images & Highly complex \\
-\hline
-\caption{Summary of Wavelet Filter Variations for Poisson Noise Reduction in Medical and X-ray Images, Highlighting Strengths and Challenges}
-\label{tab:wavelet}
-
-\end{longtable}
-\end{center}
-\end{comment}
-
-\begin{center}
-\small
-\setlength{\arrayrulewidth}{1mm} % Thicker outer border
-\setlength{\tabcolsep}{6pt} % Increase cell padding
-\renewcommand{\arraystretch}{1.5} % Increase row height for readability
-
-\begin{longtable}{ p{0.15\columnwidth}  p{0.3\columnwidth}   p{0.2\columnwidth}  p{0.2\columnwidth} }
-
-%\hline
-\rowcolor[HTML]{D3D3D3} 
-\textbf{Researcher(s)} & \textbf{Method} \& \textbf{Description} & \textbf{Strengths} & \textbf{Limitations} \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Thierry et al.  \cite{LUISIER2010415} & \gls{PURE-LET}: Based on the unnormalised Haar wavelet transform, the minimisation of unbiased \gls{MSE} estimate & Handles Poisson noise. Competitive in denoising and computational complexity & Cannot handle photon-limited images \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Timmermann and Nowak \cite{761328} & \gls{MMI} Model: A simple Bayesian intensity estimate procedure & Denoises photon-limited images & Highly complex \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Zhang et al. \cite{4531116} & \gls{MS-VST}: Extension of \gls{Anscombe transform} combining wavelet, ridgelet, and curvelet & Denoises photon-limited images & Highly complex \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Wang \cite{wang_noise_2008} & Adaptive Wavelet Wiener Filter: Pre-processing, three-wavelet decomposition using Daubechies wavelet (db5),  \gls{IBS} & Superior performance in preserving edges, enhancing image quality in low-dose X-ray and medical images & Highly complex \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Kaur et al. \cite{1273218} & Wavelet-Based Statistical: Uses realistic distribution of wavelet coefficients & Better feature preservation in medical images & Highly complex \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Du et al. \cite{6568145} & \gls{DTCWT}: Dual-tree complex wavelet transform & Better than wavelet transform filters in Poisson noise reduction in X-ray images & Highly complex \\
-%\hline
-\caption{Summary of Wavelet Filter Variations for Poisson Noise Reduction in Medical and X-ray Images, Highlighting Strengths and Challenges}
-\label{tab:wavelet}
-\end{longtable}
-\end{center}
-
-
- 
-The wavelet filter has proven effective in denoising photon-limited images by preserving fine edges and details while reducing Poisson noise. Despite challenges such as determining the optimal threshold and potential edge smoothing, advanced variations like \gls{IBS} techniques have enhanced its performance. These methods, particularly when using Daubechies wavelet (db5), demonstrate superior capability in handling low-dose X-ray images, making wavelet filters a potential denoiser for  LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered}  images.
-
+Despite the relative effectiveness of classical filters such as \gls{NLM} and wavelet filters, still struggle to balance noise reduction with the preservation of critical image details, especially when dealing with photon-limited X-ray images such as those produced by LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered}. This necessitates combining the strengths of multiple classical approaches to enhance denoising efficiency through developing hybrid filters.
 \subsection{Hybrid Filters}
-Hybrid filters have gained popularity for X-ray image denoising due to the non-adaptability of classical filters, as they are suited to handling specific types of noises. Hybrid filters include filters that combine two or more classical filters or use entirely non-classical spatial and transform methods to denoise the images. This subsection summarises the most notable hybrid filter approaches, strengths, and limitations.
+Hybrid filters have emerged as an alternative solution for addressing the limitations of classical filters by combining multiple techniques to handle different types of noise.  They include filters that combine two or more classical filters or use entirely non-classical spatial and transform methods to denoise the images. These filters show improved noise reduction, edge preservation, and execution efficiency. 
 
-One of the most successful hybrid filters is 3D transform domain filtering.  These methods convert 2D images into 3D domain and apply a sliding window to process the blocks, matching similar regions to effectively reduce noise through shrinking coefficients in the 3D arrays \cite{rodrigues_denoising_2008}. The most widely used 3D domain filter is the \gls{BM3D}, which is known for its significant noise reduction while preserving local texture information \cite{chandra_analysis_2020}. However, \gls{BM3D} faces challenges when the image is heavily contaminated with noise, leading to overshooting, which can obscure the structural information in X-ray images \cite{chandra_analysis_2020}.
+One of the most successful hybrid filters in X-ray denoising is 3D transform domain filtering.  These methods convert 2D images into 3D domain and apply a sliding window to process the blocks, matching similar regions to effectively reduce noise through shrinking coefficients in the 3D arrays \cite{rodrigues_denoising_2008}. The most widely used 3D domain filter is the \gls{BM3D}, known for its significant noise reduction while preserving local texture information \cite{chandra_analysis_2020}. However, \gls{BM3D} faces challenges when the image is heavily contaminated with noise, leading to overshooting, which can obscure the structural information in X-ray images \cite{chandra_analysis_2020}, limiting its suitability for denoising LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images.
 
-Over time, researchers have developed various \gls{BM3D} modifications to address the abovementioned challenges.  For instance,  Makitalo et al. \cite{6212354} modified the \gls{BM3D} for Poisson noise by incorporating an \gls{Anscombe transform} to stabilise the variance of Poisson-corrupted images. Additionally, Harrison et al. \cite{harrison_multichannel_2017} developed a custom version of \gls{BM3D} specifically for \gls{PCCT} scanners called \gls{BM3D}\textunderscore \gls{PCCT} that uses four energy thresholds and exploits correlation and exact alignment between energy bins to denoise the images.  They demonstrated that \gls{BM3D}\textunderscore \gls{PCCT} achieved a 65.0\% reduction in noise standard deviation, tighter clustering of attenuation values, and smaller mean angular differences compared to \gls{BM3D} \cite{harrison_multichannel_2017}. Ren \cite{ren_simulation_2023} also developed a denoising method based on subspace decomposition, employing sparse representation and block matching to suppress noise. In simulations using a three-dimensional digital mouse phantom, Ren’s method improved the peak signal-to-noise ratio by 2.21 dB compared to existing techniques when the photon flux was  $4 \times 10^3$ \cite{ren_simulation_2023}.
-
-Although \gls{BM3D} is the most widely used hybrid filter, several other filters have been developed to address its shortcomings. However, most of these alternatives are not widely adopted. Table \ref{tab:hybrid} below summarises these filters.
-
-
-\begin{comment}
-\begin{center}
-\small
-
-\begin{longtable}{|  p{0.2\columnwidth} |  p{0.2\columnwidth} |  p{0.2\columnwidth} |  p{0.25\columnwidth} |}
-\hline
-\textbf{Researcher} & \textbf{Hybrid Filter Method} & \textbf{Advantages} & \textbf{Limitations} \\
-\hline
-Salmon et al. \cite{salmon2014poisson} & Non-local \gls{PCA} & Better noise reduction compared to \gls{BM3D} & Increased execution time due to iterative nature; struggles with noise detection in high-dimensional data. \\
-\hline
-Kipele \cite{kipele_poisson_2023} & \gls{PCA} combined with \gls{NLM} & Performs well in reducing noise in images with moderate intensity & Performance not tested for extreme Poisson noise levels. \\
-\hline
-Wensen et al. \cite{doi:10.1137/16M1072930} & \gls{HNIPM} trained on \gls{Anscombe transform} & Removes Poisson noise in both high and low-peak images & Long execution time; not suitable for photon-limited images. \\
-\hline
-Jisha \& Suresh \cite{jisha2014poisson} & \gls{Anscombe transform} with Curvelet and \gls{MS-VST} & Performs better than most wavelet-based filters & Execution time may be high; tested on specific noise types. \\
-\hline
-Dong \cite{dong_x-ray_2020} & Wavelet filter combined with median filter & Preserves image details while reducing noise & Tested only on Gaussian and Salt-and-Pepper noise; efficacy on Poisson noise not verified. \\
-\hline
-Dabov et al. \cite{4271520} & Non-local adaptive nonparametric filtering & Similar performance to \gls{NLM} and \gls{Yaroslavsky filter} & Limited testing on medical X-ray images; complex computational process. \\
-\hline
-He et al. \cite{6319316} & Guided filter & Superior performance compared to bilateral filter; reduces quantum noise & Dependent on parameter selection and guidance image; large filter masks lead to blurring. \\
-\hline
-Treece et al. \cite{7559744} & Bitonic filter & Effectively reduces noise without artifacts; good edge preservation & Can cause significant blurring if not carefully applied. \\
-\hline
-Mandic et al. \cite{mandic_denoising_2018} & \gls{LPA-RICI} adaptive algorithm & Less execution time due to easy parallelisation & Limited testing on specific noise types. \\
-\hline
-Umadevi et al. \cite{umadevi_improved_2011} & Bi-orthogonal Haar wavelets with BayesShrink thresholding and \gls{ICA} & Achieves high-quality images quickly (PSNR = 44.85) & May not work as efficiently in photon-limited settings. \\
-\hline
-Kirti \cite{kirti_poisson_2017} & Hybrid filter combining non-local means and \gls{BM3D} collaborative filtering & Encouraging results with Poisson noise; improved PSNR over wavelet-based methods & Execution time still an issue compared to faster filters. \\
-\hline
-
-\caption{Summary of Hybrid Filters for X-ray Image Denoising}
-\label{tab:hybrid}
-\end{longtable}
-
-\end{center}
-\end{comment}
-
-\begin{center}
-\small
-\setlength{\arrayrulewidth}{1mm} % Thicker outer border
-\setlength{\tabcolsep}{6pt} % Increase cell padding
-\renewcommand{\arraystretch}{1.5} % Increase row height for readability
-
-\begin{longtable}{ p{0.2\columnwidth}  p{0.2\columnwidth}  p{0.2\columnwidth}  p{0.25\columnwidth} }
-%\hline
-\rowcolor[HTML]{D3D3D3} 
-\textbf{Researcher} & \textbf{Hybrid Filter Method} & \textbf{Advantages} & \textbf{Limitations} \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Salmon et al. \cite{salmon2014poisson} & Non-local \gls{PCA} & Better noise reduction compared to \gls{BM3D} & Increased execution time due to iterative nature; struggles with noise detection in high-dimensional data. \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Kipele \cite{kipele_poisson_2023} & \gls{PCA} combined with \gls{NLM} & Performs well in reducing noise in images with moderate intensity & Performance not tested for extreme Poisson noise levels. \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Wensen et al. \cite{doi:10.1137/16M1072930} & \gls{HNIPM} trained on \gls{Anscombe transform} & Removes Poisson noise in both high and low-peak images & Long execution time; not suitable for photon-limited images. \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Jisha \& Suresh \cite{jisha2014poisson} & \gls{Anscombe transform} with Curvelet and \gls{MS-VST} & Performs better than most wavelet-based filters & Execution time may be high; tested on specific noise types. \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Dong \cite{dong_x-ray_2020} & Wavelet filter combined with median filter & Preserves image details while reducing noise & Tested only on Gaussian and Salt-and-Pepper noise; efficacy on Poisson noise not verified. \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Dabov et al. \cite{4271520} & Non-local adaptive nonparametric filtering & Similar performance to \gls{NLM} and \gls{Yaroslavsky filter} & Limited testing on medical X-ray images; complex computational process. \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-He et al. \cite{6319316} & Guided filter & Superior performance compared to bilateral filter; reduces quantum noise & Dependent on parameter selection and guidance image; large filter masks lead to blurring. \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Treece et al. \cite{7559744} & Bitonic filter & Effectively reduces noise without artifacts; good edge preservation & Can cause significant blurring if not carefully applied. \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Mandic et al. \cite{mandic_denoising_2018} & \gls{LPA-RICI} adaptive algorithm & Less execution time due to easy parallelisation & Limited testing on specific noise types. \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Umadevi et al. \cite{umadevi_improved_2011} & Bi-orthogonal Haar wavelets with BayesShrink thresholding and \gls{ICA} & Achieves high-quality images quickly (PSNR = 44.85) & May not work as efficiently in photon-limited settings. \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Kirti \cite{kirti_poisson_2017} & Hybrid filter combining non-local means and \gls{BM3D} collaborative filtering & Encouraging results with Poisson noise; improved PSNR over wavelet-based methods & Execution time still an issue compared to faster filters. \\
-%\hline
-
-\caption{Summary of Hybrid Filters for X-ray Image Denoising}
-\label{tab:hybrid}
-\end{longtable}
-
-\end{center}
-
-
- 
-Hybrid filters have emerged as an effective solution for addressing the limitations of classical filters by combining multiple techniques to handle different types of noise. These filters, such as those based on \gls{PCA}, curvelet transforms, and adaptive models, show improved noise reduction, edge preservation, and execution efficiency. Notably, hybrid methods like adaptive wavelet Wiener preprocessing and variations of \gls{BM3D} tailored for Poisson noise have demonstrated superior performance in enhancing image quality in medical X-ray imaging, making them well-suited for the complex noise characteristics present in LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images.
+Although hybrid filters have significantly advanced noise reduction in X-ray imaging by combining the best aspects of classical filters, they still face limitations when it comes to real-time processing and extremely high noise levels. As these limitations persist, it is critical to shift from traditional filtering techniques to data-driven learning \gls{ML} models that are adaptive to denoise X-ray images like those produced by  LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} system.
 
 
 \subsection{Deep Learning Methods}
@@ -612,97 +297,161 @@ Machine learning, particularly deep learning, has transformed data processing by
 
 The shift from conventional filters to \gls{ML} methods has been driven by several challenges. Studies have shown that the manual selection of filters is a cumbersome process requiring good domain knowledge \cite{juneja_denoising_2024}.  Additionally, many conventional filters rely on prior noise information, further complicating optimisation \cite{juneja_denoising_2024}. In contrast, ML methods require relatively few tuning parameters and learn by themselves to denoise images \cite{nadkarni_deep_2023}. For instance,  \gls{CNN} excel at extracting relevant features from noisy data and can be trained efficiently using parallel processing with \gls{GPU}s \cite{juneja_denoising_2024}. This makes \gls{ML} methods more efficient than conventional filters in many cases.
 
-The following will explore several specific applications of deep learning frameworks that denoise X-ray images with a specific focus on unsupervised models. \gls{N2N} and \gls{N2V} are the two most common unsupervised deep learning denoising methods that have been used in medical image denoising as they do not require clean reference images, making them well-suited for applications such as LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} image denoising.
+The following will explore several specific applications of deep learning frameworks that denoise X-ray images with a specific focus on unsupervised models. \gls{N2N} and \gls{N2V} are the two most common unsupervised deep learning denoising methods that have been used in medical image denoising as they do not require clean reference images, making them well-suited for applications such as LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} image denoising. To understand these models effectively, a brief overview of traditional \gls{CNN}s is explored first to lay the groundwork required to understand the adaptions made to the \gls{N2N} and \gls{N2V} models.
 
+\subsubsection*{Traditional \gls{CNN}}
+\textbf{Theory} \\
+Traditional \gls{CNN}s learn to denoise images by mapping corrupted observations to clean versions.  This is done through training a \gls{CNN} with a large number of input and ground truth pairs($x_i,y_i$) and then minimising the empirical risk as shown in Equation \ref{eq:emprisk} below:
+
+
+\begin{equation}
+	\arg\min_{\theta} \sum_{i} L\left( f_{\theta}(\hat{x}_i), y_i \right)
+	\label{eq:emprisk}
+\end{equation}
+Where:
+\begin{table}[h!]
+	\begin{tabular}{ll}
+		$f_{\theta}$ & represents a parametric family of mappings (e.g., \gls{CNN}s), under the loss function L.  \\
+		$\hat{x}_i$ & shows the corrupted input $\hat{x}_i \sim p(\hat{x}_i | y_i)$  is a random variable distributed according to the clean target.\\
+	\end{tabular}
+\end{table}
+
+This can be broken down further by treating each pixel prediction in output to have a specific receptive field $x_{RF}(i)$, i.e the set of input pixels influencing that output pixel prediction. Consequently, this shows that denoising can be achieved by extracting overlapping patches and feeding them to the network one by one, rendering the parametric mapping from equation \ref{eq:emprisk}to be rewritten as:
+\begin{equation}
+	f({{\mathbf{x}}_{{\text{RF}}(i)}};\theta ) = {\hat y_i}
+	\label{eq:parmap}
+\end{equation}
+
+The training inputs are now seen as pairs(${\mathbf{x}}_{{\text{RF}}(i)}^j$, ${\mathbf{y}}_i^j$) where ${\mathbf{x}}_{{\text{RF}}(i)}^j$ is a patch around pixel i, extracted from the training input image and ${\mathbf{y}}_i^j$ is the corresponding target pixel value, extracted from the ground truth image at the same position. This now leads to the Equation \ref{eq:emprisk} above to be refactored to Equation \ref{eq:empriskmod}:
+
+\begin{equation}
+	\mathop {\arg \min }\limits_\theta \sum\limits_j \sum\limits_i L\left( f({\mathbf{x}}_{{\text{RF}}(i)}^j;\theta ) = {\mathbf{\hat y}}_i^j, {\mathbf{y}}_i^j \right)
+	\label{eq:empriskmod}
+\end{equation}
+
+
+With an \gls{MSE} Loss defined as:
+
+\begin{equation}
+	L\left( {\mathbf{\hat y}}_i^j, {\mathbf{y}}_i^j \right) = \left( {\mathbf{\hat y}}_i^j - {\mathbf{y}}_i^j \right)^2
+	\label{eq:loss}
+\end{equation}
+
+\textbf{Architecture}\\
+The \gls{CNN} architecture that is of interest in our study is the \gls{U-Net} architecture since both \gls{N2N} and \gls{N2V} modify this neural net type in their respective implementations. Additionally, it is widely used in medical image denoising because it can produce accurate segmentation even with small training datasets.  A typical U-net generally consists of two key parts:
+
+\begin{enumerate}
+	\item \textbf{Contracting path:} responsible for identifying relevant features in an image through using encoder layers to perform convolution operations to reduce the spatial resolution of feature maps whilst increasing their depth to capture abstract representations of the input. 
+	\item \textbf{Expansive path:} Focuses on decoding the encoded data from the contracting path to locate the features whilst maintaining the input's spatial resolution. This is done through upsampling and performing convolutional operations.
+\end{enumerate}
+
+An example of \gls{U-Net} architecture is shown in Figure \ref{fig:Unet} below:
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{3_Chapters//3_Chapter_Methodology//Figures/Unet.jpg}
+	\caption{illustrates the \gls{U-Net} architecture, which transforms a grayscale input image into a smaller binary segmentation map using a contracting-expansive path with skip connections and no padding, progressively reducing spatial dimensions while increasing feature depth.}
+	\label{fig:Unet}
+\end{figure}
+
+\subsubsection*{\gls{N2N}}
 Lehtinen et al. \cite{pmlr-v80-lehtinen18a} developed \gls{N2N}  to address the challenge of requiring clean and noisy image pairs during the model training phase. \gls{N2N} makes use of two noisy images each with an independent noise distribution to learn the underlying signal from these noise-corrupted data points. Studies have shown \gls{N2N} achieving comparable performance to models trained with clean images. For instance, Lehtinen et al. \cite{pmlr-v80-lehtinen18a} trained the \gls{N2N} for 300 epochs with noisy targets and achieved an average \gls{PSNR} of 31.10 dB on the validation set, while training with clean targets reached 31.14 dB, comparable to previous work by Wang et al. \cite{wang2016accelerating} and Lee et al. \cite{7950457}. Additionally, \gls{N2N} can generalise across various types of noise distributions \cite{pmlr-v80-lehtinen18a}. The use of noisy image pairs during training and adapting to various noise types makes \gls{N2N} a highly suitable model for denoising LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images where noise is prevalent and acquiring images is impossible.
 
+\textbf{Theory}\\
+N2N improves on the traditional CNN model by eliminating the dependency on input data on the equation \ref{eq:emprisk} and using a trivial $f_{\theta}$ that outputs a learned scalar. This task reduces to a loss function, which can be viewed as an \gls{ML} estimation by interpreting the loss function as the negative log-likelihood as shown in equation \ref{eq:min_expectation} below:
+\begin{equation}
+	\arg\min_{\theta} \mathbb{E}_{x} \left\{ \mathbb{E}_{y|x} \left[ L(f_{\theta}(x), y) \right] \right\}
+	\label{eq:min_expectation}
+\end{equation}
+From the above, it is deduced that the network can solve the point estimation problem separately for each input sample. Thus \gls{N2N} works on the principle that the property of L2 minimisation that on expectation, the estimate remains unchanged when the targets are replaced with random numbers whose expectations match the targets. Consequently, the loss function holds under these conditions, and the optimal network parameters $\theta$ of Equation \ref{eq:min_expectation} also remain unchanged, if input-conditioned target distributions $p(y|x)$  are replaced with arbitrary distributions that have the same conditional expected values.  As a consequence and  factoring in the use of corrupted inputs the empirical minimisation task reduces to equation \ref{eq:min_loss} below:
+\begin{equation}
+	\arg\min_{\theta} \sum_{i} L\left( f_{\theta}(\hat{x}_i), \hat{y}_i \right)
+	\label{eq:min_loss}
+\end{equation}
+
+With inputs being drawn from a corrupted distribution that is conditioned on the underlying, unobserved clean target $y_i$ such that  $E\{\hat{y}_i|\hat{x}_i\} = y_i$, given an infinite data, the solution is the same as that of equation \ref{eq:emprisk} of traditional \gls{CNN}.
+
+\gls{N2N}  starts with  a pair of  noisy image pairs  ($x^j$, $x^{j'}$), where
+
+\begin{equation}
+	x^j = s^j + n^j \quad \text{and} \quad x^{j'} = s^{j'} + n^{j'}
+	\label{eq:noisemodel}
+\end{equation}
+
+The two training images are identical up to their noise components $n^j, n^{j'}$. Applying patch-based approach the training data is then viewed as pairs ${\mathbf{x}}_{{\text{RF}}(i)}^j, {{\mathbf{x}}_i}^{'j}$, consisting of a noisy input patch ${\mathbf{x}}_{{\text{RF}}(i)}^j$, extracted from $x^j$, and a noisy target, taken from $x^{'j}$ at the position i. Similarly, to traditional \gls{CNN} training, parameters are tuned to minimise the loss in equation \ref{eq:loss}, however, the only difference is that a noisy target is being used instead of ground truth data $y_i$. 
+
+\textbf{Architecture} \\
+\gls{N2N} architecture is a modified \gls{U-Net} architecture consisting of the following three key parts:
+\begin{enumerate}
+	\item \textbf{Contraction Part:} The contraction part consists of multiple Conv2D layers with 3x3 filters, typically using 64 filters to capture features from the input image. Optional dropout layers can be included to prevent overfitting by randomly zeroing a fraction of input units during training. Max-pooling layers with 2x2 filters are used to down-sample the feature maps, reducing spatial dimensions while retaining important features.
+	\item \textbf{Bottleneck Part:} In the bottleneck, two Conv2D layers with 3x3 filters further process the down-sampled feature maps. Optional dropout layers can be applied to prevent overfitting. Up-sampling with 2x2 layers increases the spatial dimensions, preparing the feature maps for the expansion phase.
+	\item \textbf{Expansion Part:} The expansion part includes Conv2D layers with 3x3 filters to refine the up-sampled feature maps and reconstruct the denoised image. Optional dropout layers help improve generalisation. 2x2 up-sampling layers restore the spatial dimensions of the feature maps to match the original input size.
+\end{enumerate}
+The architecture of a sample \gls{N2N} is visualised in Figure \ref{fig:N2Narch} below:
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.25\linewidth]{3_Chapters//3_Chapter_Methodology//Figures/noise2noise_model.png}
+	\caption{\gls{N2N} architecture}
+	\label{fig:N2Narch}
+\end{figure}
+
+\subsubsection*{\gls{N2V}}
 Krull et al. \cite{8954066} developed \gls{N2V} to eliminate the need for paired noisy images during the training phase. \gls{N2V} uses single noisy images to train the network to predict the values of randomly masked pixels, encouraging the model to learn spatial relationships in the data. This makes \gls{N2V} highly adaptable to various noise types as minimal assumptions about the underlying noise distribution are made. Krull et al. \cite{8954066}  demonstrated \gls{N2V} applicability to various imaging modalities by running experiments on photography, fluorescence microscopy, and cryo-Transmission Electron Microscopy. They concluded that as long as the assumptions of predictable signal and pixel-wise independent noise are met, \gls{N2V} performance is comparable to traditional and \gls{N2N}-trained models \cite{8954066}. Since \gls{N2V} does not require clean images or paired noisy images, it is a highly scalable solution, well-suited for LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images.
 
-Both Noise2Noise and Noise2Void are promising models for medical image denoising due to their unsupervised nature, effectively addressing the challenges of acquiring clean training data in a clinical context like Lodox imaging.
 
-Other attempts to denoise X-ray images primarily using supervised learning are summarised in Table \ref{tab:deeplearning} below: 
+\textbf{Theory} \\
+\gls{N2V} is an extension of \gls{N2N} in that it proposes that the two patches be extracted from a single image instead of two.  It is based on the principle that upon extraction of a patch, the centre pixel can be masked and used as the target, allowing the network to learn to map the value at the centre of the input patch directly to the output. 
+
+To achieve this \gls{N2V} has a set of assumptions:
+
+\begin{enumerate}
+	\item Image generation is seen as ${\mathbf{x}} = {\mathbf{s}}+ {\mathbf{n}}$ as a draw from the joint distribution $p({\mathbf{s}},{\mathbf{n}}) = p({\mathbf{s}})p({\mathbf{n}}|{\mathbf{s}})$
+	\item $p({\mathbf{s}})$ is assumed to be an arbitrary distribution satisfying $p({{\mathbf{s}}_i}|{{\mathbf{s}}_j}) \ne p({{\mathbf{s}}_i})$ for two pixels i and j within a certain radius of each other, with pixel ${{\mathbf{s}}_i}$ of the signal not statistically independent. \label{it:second}
+	\item With respect to ${\mathbf{n}}$ a conditional distribution of the following form is assumed: $p({\mathbf{n}}|{\mathbf{s}}) = \prod\limits_i {p({{\mathbf{n}}_i}{{\mathbf{s}}_i})} $, indicating pixels values of the noise are conditionally independent given the signal.
+	\item Noise is assumed to be zero-mean i.e $\mathbb{E}[{{\mathbf{n}}_i}] = 0$ leading to $\mathbb{E}[{{\mathbf{x}}_i}] = {{\mathbf{s}}_i}$ \label{it:fourth}
+\end{enumerate}
+
+Based on the above assumptions, it can be deduced that acquiring multiple images with the same underlying signal but different noise realisations, and then averaging them, will converge toward the true signal.
+
+\gls{N2V} uses a special receptive field with a blind spot at its centre, as shown in Figure \ref{fig:blind} below; thus, \gls{CNN} prediction ${{\mathbf{\hat s}}_i}$ for a pixel is affected by all input pixels in a square neighbourhood except for the input pixel ${{\mathbf{x}}_i}$ at its very location. This leads to less information than a traditional \gls{CNN}; however, this is the advantage of the blindspot network i.e. its inability to learn identities. This is done by a masking scheme that replaces the value in the centre of each input patch with a randomly selected value from the surrounding area.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.3\linewidth]{3_Chapters//3_Chapter_Methodology//Figures/blindspot.png}
+	\caption{Blind-spot network showing the receptive field of a pixel, excluding the pixel itself.}
+	\label{fig:blind}
+\end{figure}
+
+The noise is assumed to be pixel-wise independent; thus, neighbouring pixels carry no information about the pixel, and therefore, it is impossible to produce an estimate that is better than a priori expected value(see \ref{it:fourth}). However, this is countered by the signal being assumed to contain statistical dependencies (see \ref{it:second}). As a result, the network can still estimate the signal ${{\mathbf{s}}_i}$ of a pixel by looking at its surroundings.  Consequently, the blind network allows extraction of input patch and target value from the same noisy image. Thus the empirical risk becomes:
+
+\begin{equation}
+	\mathop {\arg \min }\limits_\theta \sum\limits_j {\sum\limits_i {L\left( {f({\mathbf{\tilde x}}_{{\text{RF}}(i)}^j;\theta ),{\mathbf{x}}_i^j} \right)} } 
+	\label{eq:minn2v}
+\end{equation}
+
+The target ${\mathbf{x}}_i^j$ is equivalent to \gls{N2N}'s ${\mathbf{x}}_i^{‘j}$ which is extracted from the second image. The two target values ${\mathbf{x}}_i^j$ and ${{\mathbf{x}}_i^{‘j}}$ have an equal signal ${{\mathbf{s}}_i^j}$with noise components being two independent samples from the same distribution $p({{\mathbf{n}}_i}|{{\mathbf{s}}_j})$. This, in principle, shows that using a blindspot network, an individual noisy image can be used to train the model. 
+
+\textbf{Architecture}\\
+\gls{N2V} is  based on a modified \gls{U-Net} architecture and consists of three main sections:
+
+\begin{enumerate}
+	\item \textbf{Contraction Part}: Multiple Conv2D layers with 3x3 filters (typically 64 filters each) capture features from the input image. Optional dropout layers prevent overfitting, and 2x2 max-pooling layers down-sample the feature maps, reducing spatial dimensions while retaining important features.
+	\item \textbf{Bottleneck Part}: Two Conv2D layers with 3x3 filters further process the down-sampled feature maps. Optional dropout layers are included, and 2x2 up-sampling layers increase the spatial dimensions of the feature maps, preparing them for the expansion part.
+	\item \textbf{Expansion Part}: Multiple Conv2D layers with 3x3 filters refine the up-sampled feature maps and reconstruct the denoised image. Optional dropout layers enhance generalisation, and 2x2 up-sampling layers restore the feature maps to the original input size. 
+\end{enumerate}
+A visual representation of the architecture is shown in Figure \ref{fig:N2Varch} below:
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.25\linewidth]{3_Chapters//3_Chapter_Methodology//Figures/noise2void_model.png}
+	\caption{\gls{N2V} architecture}
+	\label{fig:N2Varch}
+\end{figure}
 
 
-\begin{comment}
-\begin{center}
-\small
+\newpage
+Both \gls{N2N} and \gls{N2V} are promising models for medical image denoising due to their unsupervised nature, effectively addressing the challenges of acquiring clean training data in a clinical context like Lodox imaging. Other attempts to denoise X-ray images primarily using supervised learning are discussed below.
 
-\begin{longtable}{| p{0.2\columnwidth} | p{0.2\columnwidth} |  p{0.2\columnwidth} |  p{0.3\columnwidth} |}
-\hline
-\textbf{Author(s)} & \textbf{Proposed Model}  & \textbf{Strengths} & \textbf{Challenges} \\
-\hline
-Zhang et al. \cite{7839189} & \gls{DnCNN}: Neural network that outputs residual noise (V) and computes clean X-ray (C) as the sum of noisy observation and residual image & Outperforms \gls{BM3D} and \gls{WNNM} & Not effective for Poisson noise \\
-\hline
-Hariharan \cite{hariharan_learning-based_2019} & Learning-based model using model-based simulations and data-driven normalisation for robust denoising & Outperforms \gls{BM3D} and \gls{WNNM}; produces visually superior results & Limited clinical practicality due to reliance on simulated data \\
-\hline
-Nadkarni et al. \cite{nadkarni_deep_2023} & Custom 2-D \gls{U-Net} \gls{CNN} for quick iterative reconstruction and accurate material decomposition across energy thresholds & 15 times faster than iterative reconstruction; higher spatial resolution & Relies on supervised learning and high computational resources; training detector prone to distortions \\
-\hline
-Huber et al. \cite{huber_dedicated_2022} & \gls{CNN} model using \gls{U-Net} for ultra-high-resolution \gls{PCD} \gls{CT}, trained with image-based noise insertion & Retains fine details and low contrast signals; preferred by radiologists & Limited by supervised learning and high-quality training data requirements \\
-\hline
-Chang et al. \cite{chang_improved_2024} & \gls{PKAID-Net} using prior knowledge-aware iterative denoising neural network using lower-noise \gls{VMI} for improved denoising & 96\% noise reduction; maintains spatial and spectral fidelity & Potentially complex iterative refinement may limit practical application \\
-\hline
-Baffour et al. \cite{baffour_photon-counting_2023} & \gls{CNN} model for detecting multiple myeloma using \gls{PCD} \gls{CT} images & Enhanced detection of abnormalities; better clarity and accuracy & Focused on detection and denoising only a small subset \\
-\hline
-Durcos et al. \cite{ducros2017regularization} & Uses regularisation strategy to suppress noise & Easy to implement & Limited noise suppression effect across various noise types \\
-\hline
-Zhang et al. \cite{zhang2020multi} & Third-Order Tensor Model that combines \gls{TV} regularisation with tensor similarity and image sparsity & Improved noise suppression & High computational costs due to tensor reconstruction \\
-\hline
-Sun et al. \cite{sun_research_2024}
- & \gls{FBPtransNet} that combines \gls{U-Net} \gls{CNN} with Transformer module for improved image detail restoration & Outperforms \gls{TV} and \gls{FBPconvNet}; clearer image details & Does not clearly address Poisson noise \\
-\hline
-
-\caption{Summary of Deep Learning Approaches for X-Ray Image Denoising}
-\label{tab:deeplearning}
-\end{longtable}
-
-\end{center}
-
-\end{comment}
-
-\begin{center}
-\small
-\setlength{\arrayrulewidth}{1mm} % Thicker outer border
-\setlength{\tabcolsep}{6pt} % Increase cell padding
-\renewcommand{\arraystretch}{1.5} % Increase row height for readability
-
-\begin{longtable}{ p{0.2\columnwidth}  p{0.2\columnwidth}   p{0.2\columnwidth}   p{0.3\columnwidth} }
-%\hline
-\rowcolor[HTML]{D3D3D3} 
-\textbf{Author(s)} & \textbf{Proposed Model}  & \textbf{Strengths} & \textbf{Challenges} \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Zhang et al. \cite{7839189} & \gls{DnCNN}: Neural network that outputs residual noise (V) and computes clean X-ray (C) as the sum of noisy observation and residual image & Outperforms \gls{BM3D} and \gls{WNNM} & Not effective for Poisson noise \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Hariharan \cite{hariharan_learning-based_2019} & Learning-based model using model-based simulations and data-driven normalisation for robust denoising & Outperforms \gls{BM3D} and \gls{WNNM}; produces visually superior results & Limited clinical practicality due to reliance on simulated data \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Nadkarni et al. \cite{nadkarni_deep_2023} & Custom 2-D \gls{U-Net} \gls{CNN} for quick iterative reconstruction and accurate material decomposition across energy thresholds & 15 times faster than iterative reconstruction; higher spatial resolution & Relies on supervised learning and high computational resources; training detector prone to distortions \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Huber et al. \cite{huber_dedicated_2022} & \gls{CNN} model using \gls{U-Net} for ultra-high-resolution \gls{PCD} \gls{CT}, trained with image-based noise insertion & Retains fine details and low contrast signals; preferred by radiologists & Limited by supervised learning and high-quality training data requirements \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Chang et al. \cite{chang_improved_2024} & \gls{PKAID-Net} using prior knowledge-aware iterative denoising neural network using lower-noise \gls{VMI} for improved denoising & 96\% noise reduction; maintains spatial and spectral fidelity & Potentially complex iterative refinement may limit practical application \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Baffour et al. \cite{baffour_photon-counting_2023} & \gls{CNN} model for detecting multiple myeloma using \gls{PCD} \gls{CT} images & Enhanced detection of abnormalities; better clarity and accuracy & Focused on detection and denoising only a small subset \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Durcos et al. \cite{ducros2017regularization} & Uses regularisation strategy to suppress noise & Easy to implement & Limited noise suppression effect across various noise types \\
-%\hline
-\rowcolor[HTML]{F3F3F3} 
-Zhang et al. \cite{zhang2020multi} & Third-Order Tensor Model that combines \gls{TV} regularisation with tensor similarity and image sparsity & Improved noise suppression & High computational costs due to tensor reconstruction \\
-%\hline
-\rowcolor[HTML]{FFFFFF} 
-Sun et al. \cite{sun_research_2024} & \gls{FBPtransNet} that combines \gls{U-Net} \gls{CNN} with Transformer module for improved image detail restoration & Outperforms \gls{TV} and \gls{FBPconvNet}; clearer image details & Does not clearly address Poisson noise \\
-%\hline
-
-\caption{Summary of Deep Learning Approaches for X-Ray Image Denoising}
-\label{tab:deeplearning}
-\end{longtable}
-
-\end{center}
+Supervised models struggle to denoise images such as LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} as no noiseless images are available to train the models. Zhang et al.'s \gls{DnCNN} model \cite{7839189}, though effective against traditional noise, struggles with Poisson noise common in low-dose imaging like LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered}. Hariharan's model-based approach \cite{hariharan_learning-based_2019} demonstrates strong results with simulated data, but its reliance on simulations limits real-world clinical applicability. Nadkarni et al.'s 2D \gls{U-Net} \gls{CNN} \cite{huber_dedicated_2022} and Chang et al.'s \gls{PKAID-Net} \cite{chang_improved_2024}, deliver high-quality denoising but similarly rely on supervised learning and complex iterative processes, which may hinder their effectiveness in LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} settings where acquiring clean reference images is impractical. While these models are powerful, their supervised nature and dependency on high-quality training data pose challenges for effectively denoising LODOX\textsuperscript{\textregistered} Statscan\textsuperscript{\textregistered} images. 
 
 
 \section{Conclusion}
